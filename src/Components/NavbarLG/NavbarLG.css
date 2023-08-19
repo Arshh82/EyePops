@@ -1,0 +1,57 @@
+
+.Navbar-LG-Container{
+    width: 100%;
+    height: 4rem;
+    background-color:#7c9ce5;
+}
+.LG-Navbar-secA{
+    width: 10rem;
+    height: 100%;
+    float: left;
+    /* background-color: blue; */
+}
+.Brand-logo{
+    margin-top: 5%;
+    height: 80%;
+    float: right;
+}
+.LG-Navbar-secB{
+    width: 14rem;
+    height: 100%;
+    float: right;
+    /* background-color: rgb(38, 126, 177); */
+    display: flex;
+    align-items: center;
+    color: rgb(41, 22, 110);
+}
+.Logo-togle{
+    font-size: 2.2rem;
+    margin: .2rem;
+}
+.login-butn{
+    border-style: none;
+    width: 4rem;
+    height: 2rem;
+    margin-left: 0.8rem;
+    border-radius: 7px;
+    font-size: large;
+    background-color: rgb(41, 22, 110) ;
+    color: white;
+}
+.Cart-count{
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: rgb(41, 22, 110);
+    border-radius: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.4rem;
+    font-weight: 600;
+}
+.llink{
+    color: rgb(41, 22, 110);
+
+}
