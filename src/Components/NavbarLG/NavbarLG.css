@@ -1,42 +1,68 @@
-
 .Navbar-LG-Container{
     width: 100%;
-    height: 4rem;
-    background-color:#7c9ce5;
+    height: 3.5rem;
+    background-color:#ffffff;
 }
 .LG-Navbar-secA{
-    width: 10rem;
+    width: 24rem;
     height: 100%;
     float: left;
-    /* background-color: blue; */
+    background-color: blue;
 }
 .Brand-logo{
     margin-top: 5%;
-    height: 80%;
+    height: 50%;
+
     float: right;
+}
+.Eyeglass-sec,.Sunglass-sec{
+    height: 100%;
+    width: 5.5rem;
+    display: flex;
+    margin-left: 0.5rem;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    float: left;
+}
+.Computer-sec{
+    height: 100%;
+    width: 9rem;
+    display: flex;
+    margin-left: 0.5rem;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    float: left;
+
 }
 .LG-Navbar-secB{
     width: 14rem;
     height: 100%;
     float: right;
-    /* background-color: rgb(38, 126, 177); */
+    background-color: rgb(38, 126, 177);
     display: flex;
     align-items: center;
     color: rgb(41, 22, 110);
 }
 .Logo-togle{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin: .2rem;
 }
 .login-butn{
     border-style: none;
-    width: 4rem;
-    height: 2rem;
+    width: 7rem;
+    height: 2.2rem;
     margin-left: 0.8rem;
     border-radius: 7px;
     font-size: large;
-    background-color: rgb(41, 22, 110) ;
-    color: white;
+    display: flex;
+    justify-content: start;
+    /* background-color: rgb(41, 22, 110) ; */
+    color: rgb(41, 22, 110);
+
 }
 .Cart-count{
     width: 1.6rem;
