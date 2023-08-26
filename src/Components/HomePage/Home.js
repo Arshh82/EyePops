@@ -65,9 +65,41 @@ const Home = () => {
       </div>
 
       <div className='section-c'>
+        <div className='c-ch-a'>
+            <h1 style={{fontSize:'xxx-large',fontWeight:'700',color:' rgb(153, 93, 90)'}}>Every Vision of You</h1>
+            <h4 style={{fontWeight:'700'}} className='mt-3'>It`s always a good day to buy glasses online.</h4><br/>
+            <h6 style={{fontSize:'large'}}>Express your every vision with affordable eyeglasses and prescription sunglasses.</h6>
+            <h6 style={{fontSize:'large'}}>Shop thousands of glasses with Virtual Try-on Frames starting at just Rs.1000!</h6><br />
+            <button className='mt-3 btn-cha'>Shop Eyeglasses</button>
+            <button className='mt-3 btn-cha'>Shop Sunglasses</button>
+        </div>
+
+        <div className='c-ch-b'>
+          <div className='ch-b-heading'>
+            <h1 style={{ fontSize: '2.5rem', fontWeight: '700' }}>Best Selling Glasses</h1>
+          </div>
+
+          <div className='ch-b-Pcard'>
+            <div className='ch-b-Glas-card'>
+
+            </div>
+            <div className='ch-b-Glas-card'>
+
+            </div>
+            <div className='ch-b-Glas-card'>
+
+            </div>
+            <div className='ch-b-Glas-card'>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
       
+     
     </>
   );
 }
