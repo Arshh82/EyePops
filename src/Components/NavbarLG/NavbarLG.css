@@ -1,52 +1,71 @@
+.menu-togle{
+    display: none;
+}
 .Navbar-LG-Container{
     width: 100%;
-    height: 3.5rem;
+    height: 4rem;
     background-color:#ffffff;
+    /* overflow: hidden; */
 }
 .LG-Navbar-secA{
-    width: 24rem;
+    width: 16rem;
     height: 100%;
     float: left;
-    background-color: blue;
+    margin-right: 3rem;
+    /* background-color: blue; */
 }
 .Brand-logo{
-    margin-top: 5%;
+    margin-top: 9.5%;
     height: 50%;
-
     float: right;
 }
+
 .Eyeglass-sec,.Sunglass-sec{
     height: 100%;
-    width: 5.5rem;
+    width: auto;
     display: flex;
-    margin-left: 0.5rem;
-    font-size: large;
+    margin-right: 2rem;
+    font-size: larger;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     float: left;
 }
 .Computer-sec{
     height: 100%;
-    width: 9rem;
+    width: auto;
     display: flex;
-    margin-left: 0.5rem;
+    margin-right: 3.5rem;
     font-size: large;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     float: left;
-
+}
+.search-sec{
+    width: 20rem;
+    height: 100%;
+    float: left;
+    /* background-color: red; */
+}
+.global-search-sec{
+    border-style: none;
+    border-radius: 20px;
+    width: 100%;
+}
+.search-dev{
+    margin-top: 4%;
 }
 .LG-Navbar-secB{
-    width: 14rem;
+    width: 19rem;
     height: 100%;
     float: right;
-    background-color: rgb(38, 126, 177);
+    /* background-color: rgb(38, 126, 177); */
     display: flex;
     align-items: center;
     color: rgb(41, 22, 110);
 }
+
 .Logo-togle{
     font-size: 1.8rem;
     margin: .2rem;
@@ -79,5 +98,74 @@
 }
 .llink{
     color: rgb(41, 22, 110);
+
+}
+.sm-search{
+ display: none;   
+}
+
+/* ------------------------------------------------- */
+@media screen and (max-width: 1380px) {
+    .Eyeglass-sec,.Sunglass-sec,.Computer-sec,.search-sec{
+        display: none;
+    }
+    .menu-togle{
+        display: block;
+        width: 3rem;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: green; */
+    }
+    .LG-Navbar-secA{
+        width: 14rem;
+    }
+    .sm-search{
+        margin-top: 0.5rem;
+        width: 100%;
+        height: 3.2rem;
+        /* background-color: red; */
+        display: block;   
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .LG-Navbar-secB{
+        width: 14.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 560px) {
+    .login-butn{
+        display: none;
+    }
+    .LG-Navbar-secB{
+        width: 6.5rem;
+    }
+    .LG-Navbar-secA{
+        width: 10.5rem;
+        margin-right: 0rem;
+    }
+    .Brand-logo{
+        margin-top: 12%;
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    #fav{
+        display: none;
+    }
+    .LG-Navbar-secB{
+        width: 4rem;
+    }
 
 }

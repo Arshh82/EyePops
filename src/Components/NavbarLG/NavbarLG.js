@@ -5,6 +5,7 @@ import './NavbarLG.css'
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 
 
@@ -19,6 +20,11 @@ const NavbarLG = () => {
   return (
     <>
           <div className='Navbar-LG-Container'>
+
+              <div className='menu-togle'>
+              <RxHamburgerMenu style={{fontSize:'1.7rem'}}/>
+
+              </div>
 
               <div className='LG-Navbar-secA'>
               <Link to='/' className='llink' style={{ textDecoration: 'none' }}> <img src={Logo} alt='X' className='Brand-logo ' /></Link>
@@ -39,11 +45,32 @@ const NavbarLG = () => {
        
                </div>
 
+        <div className='search-sec'>
+        <form>
+          <div class="input-group search-dev">
+            <input type="text" class="form-control" placeholder="Search for eyewear..." aria-label="Recipient's username" aria-describedby="basic-addon2" />
+           
+          </div>
+          </form>
+
+        </div>
+
               <div className='LG-Navbar-secB'>
-                  <Link to='/favorite' className='llink' style={{ textDecoration: 'none' }}> <AiOutlineHeart className='Logo-togle' /></Link>
-                  <Link to='/cart' className='llink' style={{ textDecoration: 'none' }}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>10</div>
                   <Link to='/signin' style={{ textDecoration: 'none' }}><div className='login-butn'>Sign in <IoIosArrowDown style={{fontSize:'1.5rem'}} /></div></Link>
+                  <Link to='/favorite' className='llink' style={{ textDecoration: 'none' }}> <AiOutlineHeart className='Logo-togle' id='fav' /></Link>
+                  <Link to='/cart' className='llink' style={{ textDecoration: 'none' }}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>10</div>
+                  
               </div>
+
+          </div>
+
+          <div className='sm-search'>
+          <form>
+          <div class="input-group search-devb">
+            <input type="text" class="form-control" placeholder="Search for eyewear..." aria-label="Recipient's username" aria-describedby="basic-addon2" />
+           
+          </div>
+          </form>
 
           </div>
     </>
