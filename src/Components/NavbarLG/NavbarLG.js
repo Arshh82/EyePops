@@ -19,7 +19,8 @@ let Logo = new URL ("/public/Images/Navbar-Logo/Brand Lgo.PNG",import.meta.url)
 const NavbarLG = () => {
   return (
     <>
-          <div className='Navbar-LG-Container'>
+         <div className='home-top-offersec'></div>
+          <div className='Navbar-LG-Container sticky-top'>
 
               <div className='menu-togle'>
               <RxHamburgerMenu style={{fontSize:'1.7rem'}}/>

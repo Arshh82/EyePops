@@ -2,6 +2,11 @@ import React from 'react';
 import './Home.css'
 import Typewriter from 'typewriter-effect';
 
+import { BsArrowCounterclockwise } from "react-icons/bs";
+import { BiSupport,BiCheckShield } from "react-icons/bi";
+import { TbTruckDelivery } from "react-icons/tb";
+
+
 
 
 let Himga = new URL ("/public/Images/Homepage/cover image.PNG",import.meta.url)
@@ -11,6 +16,7 @@ const Home = () => {
  
   return (
     <>
+    
       <div className='home-container'>
         <div className='home-offer-text'>
         <div>
@@ -28,11 +34,37 @@ const Home = () => {
         </div>
 
         <div className='home-poster'>
-        <div>
           <img src={Himga} className='H-imga' />
-          </div>
         </div>
 
+       
+
+
+      </div>
+
+      <div className='delivery-line'>
+        <div>
+          <BsArrowCounterclockwise className='delv-icon' /><span style={{ fontSize: 'large' }}> 14-Day Free Returns</span>
+        </div>
+        <div className='v-line'></div>
+
+        <div>
+          <BiSupport className='delv-icon' /><span style={{ fontSize: 'large' }}> 24/7 Customer Service</span>
+        </div>
+        <div className='v-line'></div>
+
+        <div>
+          <BiCheckShield className='delv-icon' /><span style={{ fontSize: 'large' }}> Vision Insurence</span>
+        </div>
+        <div className='v-line'></div>
+
+        <div>
+          <TbTruckDelivery className='delv-icon' /><span style={{ fontSize: 'large' }}>Delivery All Over India</span>
+        </div>
+        <div className='v-line'></div>
+      </div>
+
+      <div className='section-c'>
 
       </div>
       
