@@ -1,5 +1,8 @@
 import React from 'react'
 import './NavbarLG.css'
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas/';
 
 
 import { AiOutlineHeart } from "react-icons/ai";
@@ -17,15 +20,29 @@ let Logo = new URL ("/public/Images/Navbar-Logo/Brand Lgo.PNG",import.meta.url)
 
 
 const NavbarLG = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
          <div className='home-top-offersec'></div>
           <div className='Navbar-LG-Container sticky-top'>
 
               <div className='menu-togle'>
-              <RxHamburgerMenu style={{fontSize:'1.7rem'}}/>
+              <RxHamburgerMenu style={{fontSize:'1.7rem'}} onClick={handleShow}/>
 
               </div>
+              <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
 
               <div className='LG-Navbar-secA'>
               <Link to='/' className='llink' style={{ textDecoration: 'none' }}> <img src={Logo} alt='X' className='Brand-logo ' /></Link>
