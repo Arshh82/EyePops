@@ -23,6 +23,13 @@ let Disimgb = new URL ("/public/Images/Homepage/Display 1/2 copy.png",import.met
 let Disimgc = new URL ("/public/Images/Homepage/Display 1/3 copy.png",import.meta.url)
 let Disimgd = new URL ("/public/Images/Homepage/Display 1/4 copy.png",import.meta.url)
 
+let Dis2imge = new URL ("/public/Images/Homepage/Display 2/1.avif",import.meta.url)
+let Dis2imgf = new URL ("/public/Images/Homepage/Display 2/2.avif",import.meta.url)
+let Dis2imgg = new URL ("/public/Images/Homepage/Display 2/3.avif",import.meta.url)
+
+
+
+
 
 const Home = () => {
  
@@ -141,8 +148,45 @@ const Home = () => {
         </div>
         
         <div className='section-d'>
+          <div className='section-d-card-container'>
+            <div className='section-d-card'>
+              <div className='section-d-cardimage'>
+                <img src={Dis2imge} className='section-d-cimage' />
+              </div>
+              <h2 className='mt-3' style={{ fontWeight: '700' }}>Trending Titanium</h2>
+              <p>Lightweight eyewear that’s made to last.</p>
+              <button className='mt-4 btn-cha'>Shop now</button>
+
+            </div>
+
+            <div className='section-d-card'>
+              <div className='section-d-cardimage'>
+                <img src={Dis2imgf} className='section-d-cimage' />
+              </div>
+              <h2 className='mt-3' style={{ fontWeight: '700' }}>Glasses On Sale</h2>
+              <p>Good looking out. Enjoy up to 50% off these eyewear picks!</p>
+              <button className='mt-0 btn-cha'>Shop now</button>
+
+            </div>
+
+            <div className='section-d-card'>
+              <div className='section-d-cardimage'>
+                <img src={Dis2imgg} className='section-d-cimage' />
+              </div>
+              <h2 className='mt-3' style={{ fontWeight: '700' }}>Fit & Style Quiz</h2>
+              <p>Need some help figuring out which glasses are right for you? Find your perfect pair.</p>
+              <button className='mt-0 btn-cha'>Shop now</button>
+
+            </div>
+
+          </div>
 
         </div>
+
+        <div className='section-e'>
+
+        </div>
+
 
 
       </div>

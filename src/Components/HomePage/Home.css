@@ -133,7 +133,36 @@ justify-content: space-evenly;
 }
 
 .section-d{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 40rem;
+    /* background-color: grey; */
+}
+.section-d-card-container{
+    width: 80%;
+    height: 38rem;
+    display: flex;
+    /* background-color: green; */
+}
+.section-d-card{
+    margin: 1rem;
+    width: 24rem;
+    height: 36rem;
+    text-align: center;
+    /* background-color: yellow; */
+}
+.section-d-cardimage{
+    width: 100%;
+    height: 25rem;
+    /* background-color: grey; */
+}
+.section-d-cimage{
+    width: 100%;
+    height: auto;
+}
+.section-e{
     width: 100%;
     height: 30rem;
-    background-color: grey;
+    background-color: orange;
 }
