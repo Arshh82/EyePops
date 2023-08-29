@@ -27,6 +27,10 @@ let Dis2imge = new URL ("/public/Images/Homepage/Display 2/1.avif",import.meta.u
 let Dis2imgf = new URL ("/public/Images/Homepage/Display 2/2.avif",import.meta.url)
 let Dis2imgg = new URL ("/public/Images/Homepage/Display 2/3.avif",import.meta.url)
 
+let Dis3imgh = new URL ("/public/Images/Homepage/Display 3/a.avif",import.meta.url)
+let Dis3imgi = new URL ("/public/Images/Homepage/Display 3/b.avif",import.meta.url)
+
+
 
 
 
@@ -53,7 +57,7 @@ const Home = () => {
         </div>
 
         <div className='home-poster'>
-          <img src={Himga} className='H-imga' />
+          <img src={Himga} alt='x' className='H-imga' />
         </div>
 
        
@@ -103,7 +107,7 @@ const Home = () => {
 
           <div className='ch-b-Glas-card'>
               <div className='ch-b-imgcard'>
-              <img src={Disimga} className='chcarda-img'/>
+              <img src={Disimga} alt='x' className='chcarda-img'/>
 
               </div>
               <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel <br/> Rs.1500</span></div>
@@ -112,7 +116,7 @@ const Home = () => {
 
             <div className='ch-b-Glas-card'>
               <div className='ch-b-imgcard'>
-              <img src={Disimgb} className='chcarda-img'/>
+              <img src={Disimgb} alt='x' className='chcarda-img'/>
 
               </div>
               <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Vinyl  <br/> Rs.4500</span></div>
@@ -121,7 +125,7 @@ const Home = () => {
 
             <div className='ch-b-Glas-card'>
               <div className='ch-b-imgcard'>
-              <img src={Disimgc} className='chcarda-img'/>
+              <img src={Disimgc} alt='x' className='chcarda-img'/>
 
               </div>
               <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Ember  <br/> Rs.2200</span></div>
@@ -151,39 +155,73 @@ const Home = () => {
           <div className='section-d-card-container'>
             <div className='section-d-card'>
               <div className='section-d-cardimage'>
-                <img src={Dis2imge} className='section-d-cimage' />
+                <img src={Dis2imge} alt='x' className='section-d-cimage' />
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Trending Titanium</h2>
               <p>Lightweight eyewear that’s made to last.</p>
               <button className='mt-4 btn-cha'>Shop now</button>
-
             </div>
 
             <div className='section-d-card'>
               <div className='section-d-cardimage'>
-                <img src={Dis2imgf} className='section-d-cimage' />
+                <img src={Dis2imgf} alt='x' className='section-d-cimage' />
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Glasses On Sale</h2>
               <p>Good looking out. Enjoy up to 50% off these eyewear picks!</p>
               <button className='mt-0 btn-cha'>Shop now</button>
-
             </div>
 
             <div className='section-d-card'>
               <div className='section-d-cardimage'>
-                <img src={Dis2imgg} className='section-d-cimage' />
+                <img src={Dis2imgg} alt='x' className='section-d-cimage' />
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Fit & Style Quiz</h2>
               <p>Need some help figuring out which glasses are right for you? Find your perfect pair.</p>
               <button className='mt-0 btn-cha'>Shop now</button>
-
             </div>
-
           </div>
-
         </div>
 
         <div className='section-e'>
+          <div className='section-e-container'>
+            <div className='section-e-card '>
+              <img src={Dis3imgh} alt='x' className='d-flex w-100' />
+              <div className='e-card-text mb-2'>
+                <h1 style={{ fontSize: 'xxx-large' }}>Eco Eyewear</h1>
+                <p style={{ fontSize: 'larger', fontWeight: '500' }}>Featuring thoughtful sourced materials <br /> that support a sustainable future.</p>
+                <button className='mt-1 btn-cha ' style={{ backgroundColor: 'white', borderStyle: 'none' }}>Shop now</button>
+              </div>
+            </div>
+
+            <div className='section-e-card'>
+              <img src={Dis3imgi} alt='x' className='d-flex w-100' />
+              <div className='e-card-text mb-2'>
+                <h1 style={{ fontSize: 'xxx-large' }}>Designer Eyeglasses Sale</h1>
+                <p style={{ fontSize: 'larger', fontWeight: '500' }}>50% OFF Lenses + 30 % OFF Frames with code: <br /> DBSAVINGS</p>
+                <button className='mt-1 btn-cha ' style={{ backgroundColor: 'white', borderStyle: 'none' }}>Shop now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='section-f '>
+        <div className='section-f-textcontainer'>
+          <h2 >Ordering eyeglasses online made easy</h2>
+          <span style={{fontWeight:'600',fontSize:'medium'}}>
+            Eyebuydirect is the online glasses store of your dreams (according to you!). Since 2005, we’ve been putting a focus on<br /> affordable, high-quality frame and eyeglass lenses, which is why our customers consistently rate us the best place to buy<br /> prescription eyewear. From our on-trend designs, to our everyday prices, see why our <span style={{color:'#a52a2a'}}>affordable prescription eyeglasses,</span> <br />
+            progressive lenses, sunglasses, <span style={{color:'#a52a2a'}}>blue light glasses,</span> and <span style={{color:'#a52a2a'}}>lens coatings</span> have landed everywhere from Vogue to Buzzfeed.<br />
+            Forbes, and more — all thanks to you!
+          </span>
+          </div>
+        </div>
+
+        <div className='section-g'>
+         <div className='section-g-child-a'>
+          <h1>The reviews are in!</h1>
+         </div>
+         <div className='section-g-child-b'>
+          
+         </div>
 
         </div>
 
