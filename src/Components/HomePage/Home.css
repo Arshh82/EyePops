@@ -78,7 +78,7 @@ justify-content: space-evenly;
 .c-ch-b{
     margin-top: 1rem;
     width: 100%;
-    height: 37rem;
+    height: 36rem;
     /* background-color: rgb(110, 93, 0); */
     text-align: center;
 
@@ -92,23 +92,48 @@ justify-content: space-evenly;
 .ch-b-Pcard{
     width: 100%;
     height: 26rem;
-    background-color: rgb(245, 108, 131);
+    /* background-color: rgb(245, 108, 131); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
 }
 .ch-b-Glas-card{
-    width: 20rem;
+    width: 16rem;
     float: left;
-    margin: 2rem;
-    height: 22rem;
-    background-color: aquamarine;
+    margin: 1rem;
+    height: 18rem;
+    /* background-color: aquamarine; */
 }
 .ch-b-imgcard{
     width: 100%;
     height: 80%;
-    background-color: grey;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
 }
 .ch-b-btn{
     width: 100%;
     height: 5rem;
     /* background-color: green; */
+}
+.CHcard-container{
+    width: 85%;
+    overflow: hidden;
+    height: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+.chcarda-img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.section-d{
+    width: 100%;
+    height: 30rem;
+    background-color: grey;
 }

@@ -27,7 +27,7 @@ const NavbarLG = () => {
 
   return (
     <>
-         <div className='home-top-offersec'></div>
+         <div className='home-top-offersec'><span>Designer Eyeglasses Sale | Code: DBSAVINGS <span style={{color:'#a52a2a'}}>Shop now</span></span></div>
           <div className='Navbar-LG-Container sticky-top'>
 
               <div className='menu-togle'>

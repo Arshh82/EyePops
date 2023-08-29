@@ -18,6 +18,11 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 let Himga = new URL ("/public/Images/Homepage/cover image.PNG",import.meta.url)
 
+let Disimga = new URL ("/public/Images/Homepage/Display 1/1 copy.png",import.meta.url)
+let Disimgb = new URL ("/public/Images/Homepage/Display 1/2 copy.png",import.meta.url)
+let Disimgc = new URL ("/public/Images/Homepage/Display 1/3 copy.png",import.meta.url)
+let Disimgd = new URL ("/public/Images/Homepage/Display 1/4 copy.png",import.meta.url)
+
 
 const Home = () => {
  
@@ -87,33 +92,46 @@ const Home = () => {
           </div>
 
           <div className='ch-b-Pcard'>
-          <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-            <div className='ch-b-Glas-card'>
+          <div className='CHcard-container'>
+
+          <div className='ch-b-Glas-card'>
               <div className='ch-b-imgcard'>
+              <img src={Disimga} className='chcarda-img'/>
 
               </div>
-              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel Rs.1500</span></div>
+              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel <br/> Rs.1500</span></div>
 
             </div>
-           
+
+            <div className='ch-b-Glas-card'>
+              <div className='ch-b-imgcard'>
+              <img src={Disimgb} className='chcarda-img'/>
+
+              </div>
+              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Vinyl  <br/> Rs.4500</span></div>
+
+            </div>
+
+            <div className='ch-b-Glas-card'>
+              <div className='ch-b-imgcard'>
+              <img src={Disimgc} className='chcarda-img'/>
+
+              </div>
+              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Ember  <br/> Rs.2200</span></div>
+
+            </div>
+
+            <div className='ch-b-Glas-card'>
+              <div className='ch-b-imgcard'>
+              <img src={Disimgd} className='chcarda-img'/>
+
+              </div>
+              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Good Vibrations  <br/> Rs.5500</span></div>
+
+            </div>
+
+          </div>
+
           </div>
           <div className='ch-b-btn'>
           <button className='btn-cha'>Shop best Sellers</button>
@@ -121,6 +139,11 @@ const Home = () => {
           </div>
 
         </div>
+        
+        <div className='section-d'>
+
+        </div>
+
 
       </div>
       
