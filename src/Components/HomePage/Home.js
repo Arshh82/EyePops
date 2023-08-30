@@ -1,11 +1,6 @@
-import React from 'react';
+import React , { Component } from 'react';
 import './Home.css'
 import Typewriter from 'typewriter-effect/';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 
 
 
@@ -14,6 +9,8 @@ import { BiSupport,BiCheckShield } from "react-icons/bi";
 import { TbTruckDelivery } from "react-icons/tb";
 
 
+import Slider from "react-slick";
+import { RxWidth } from 'react-icons/rx';
 
 
 let Himga = new URL ("/public/Images/Homepage/cover image.PNG",import.meta.url)
@@ -30,13 +27,28 @@ let Dis2imgg = new URL ("/public/Images/Homepage/Display 2/3.avif",import.meta.u
 let Dis3imgh = new URL ("/public/Images/Homepage/Display 3/a.avif",import.meta.url)
 let Dis3imgi = new URL ("/public/Images/Homepage/Display 3/b.avif",import.meta.url)
 
+// let Custimga = new URL ("https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",import.meta.url)
+
+
+
+
+
 
 
 
 
 
 const Home = () => {
- 
+
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    };
+
+  
   return (
     <>
     
@@ -134,7 +146,7 @@ const Home = () => {
 
             <div className='ch-b-Glas-card'>
               <div className='ch-b-imgcard'>
-              <img src={Disimgd} className='chcarda-img'/>
+              <img src={Disimgd} alt='x' className='chcarda-img'/>
 
               </div>
               <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Good Vibrations  <br/> Rs.5500</span></div>
@@ -219,9 +231,153 @@ const Home = () => {
          <div className='section-g-child-a'>
           <h1>The reviews are in!</h1>
          </div>
-         <div className='section-g-child-b'>
-          
-         </div>
+          <div className='section-g-child-b'>
+            <div>
+              <Slider {...settings} >
+                <div>
+                  <div className='section-g-card'>
+                    <div className='g-card-up' >
+                      <div className='gcard-cintainer'>
+                        <img src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80' alt='X' className='d-flex w-100' style={{borderRadius:'6rem'}} />
+                      </div>
+                      <div className='gcard-text'>
+                        <h5 style={{fontWeight:'700'}}>SAMANTHA J.</h5>
+                        <h5 style={{color:'#D39D4E'}}>I LOVE eyepopsDirect</h5>
+                      </div>
+                    </div>
+                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <div className='gcard-cmnt' >
+                      <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
+                        It's so user friendly and the customer service is incredible! I tell everyone who compliments my glasses (which happens a lot!) to use this site. Thank you
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className='section-g-card'>
+                    <div className='g-card-up' >
+                      <div className='gcard-cintainer'>
+                        <img src='https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png' alt='X' className=' d-flex w-100 h-100' style={{borderRadius:'5rem'}} />
+                      </div>
+                      <div className='gcard-text'>
+                        <h5 style={{fontWeight:'700'}}>MICKAELIA W</h5>
+                        <h5 style={{color:'#D39D4E'}}>Great Quality</h5>
+                      </div>
+                    </div>
+                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <div className='gcard-cmnt' >
+                      <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
+                      So easy to order and great prices to top it off. I also like the fact that they carry Oakley brand products.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className='section-g-card'>
+                    <div className='g-card-up' >
+                      <div className='gcard-cintainer'>
+                        <img src='https://media.istockphoto.com/id/1154642632/photo/close-up-portrait-of-brunette-woman.jpg?s=612x612&w=0&k=20&c=d8W_C2D-2rXlnkyl8EirpHGf-GpM62gBjpDoNryy98U=' alt='X' className='d-flex w-100' style={{borderRadius:'5rem'}} />
+                      </div>
+                      <div className='gcard-text'>
+                        <h5 style={{fontWeight:'700'}}>EMILY S.</h5>
+                        <h5 style={{color:'#D39D4E'}}>Great customer service!</h5>
+                      </div>
+                    </div>
+                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <div className='gcard-cmnt' >
+                      <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
+                      This is by far the easiest eyewear website to use when comparing different frames. It's helpful to have the sizes and try-on feature readily available in the favorites section.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className='section-g-card'>
+                    <div className='g-card-up' >
+                      <div className='gcard-cintainer'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJktgxGN_T3zisMxJb0GazGPI5Wsme2LAIGw&usqp=CAU' alt='X' className='d-flex w-100' style={{borderRadius:'6rem'}} />
+                      </div>
+                      <div className='gcard-text'>
+                        <h5 style={{fontWeight:'700'}}>CARLEE A. B.</h5>
+                        <h5 style={{color:'#D39D4E'}}>Perfect Fit</h5>
+                      </div>
+                    </div>
+                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <div className='gcard-cmnt' >
+                      <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
+                      The website was easy to use, the glasses shipped quickly, and I get nothing but compliments on my new glasses! Thanks!!
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div>
+                  <div className='section-g-card'>
+                    <div className='g-card-up' >
+                      <div className='gcard-cintainer'>
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63KoribGVDB_dswx8iUX99udIebJK_EsaYYTwg2vJoIeIECXhO8iWnI5VBU64wLJ-8gg&usqp=CAU' alt='X' className='d-flex w-100' style={{borderRadius:'6rem'}} />
+                      </div>
+                      <div className='gcard-text'>
+                        <h5 style={{fontWeight:'700'}}>PAUHOV X.</h5>
+                        <h5 style={{color:'#D39D4E'}}>Awesome!</h5>
+                      </div>
+                    </div>
+                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <div className='gcard-cmnt' >
+                      <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
+                      These glasses fit perfectly! They are super lightweight, yet also feel very sturdy at the same time. The colors and design are beautiful. Will be a returning customer!
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className='section-g-card'>
+                    <div className='g-card-up' >
+                      <div className='gcard-cintainer'>
+                        <img src='https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-1.png' alt='X' className='d-flex w-100' style={{borderRadius:'6rem'}} />
+                      </div>
+                      <div className='gcard-text'>
+                        <h5 style={{fontWeight:'700'}}>JUAN F.</h5>
+                        <h5 style={{color:'#D39D4E'}}>So easy</h5>
+                      </div>
+                    </div>
+                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <div className='gcard-cmnt' >
+                      <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
+                      So easy to order and great prices to top it off. I also like the fact that they carry Oakley brand products.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className='section-g-card'>
+                    <div className='g-card-up' >
+                      <div className='gcard-cintainer'>
+                        <img src='https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/avatar/avatar-2.png' alt='X' className='d-flex w-100' style={{borderRadius:'6rem'}} />
+                      </div>
+                      <div className='gcard-text'>
+                        <h5 style={{fontWeight:'700'}}>Justin J.</h5>
+                        <h5 style={{color:'#D39D4E'}}>Perfect</h5>
+                      </div>
+                    </div>
+                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <div className='gcard-cmnt' >
+                      <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
+                        I tell everyone who compliments my glasses (which happens a lot!) to use this site. Thank you
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+               
+               
+              </Slider>
+            </div>
+          </div>
 
         </div>
 
