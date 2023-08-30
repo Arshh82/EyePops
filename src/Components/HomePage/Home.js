@@ -6,7 +6,14 @@ import Typewriter from 'typewriter-effect/';
 
 import { BsArrowCounterclockwise } from "react-icons/bs";
 import { BiSupport,BiCheckShield } from "react-icons/bi";
-import { TbTruckDelivery } from "react-icons/tb";
+import { TbTruckDelivery,TbDeviceMobileDollar } from "react-icons/tb";
+import { RiPagesLine } from "react-icons/ri";
+import { LuScale3D } from "react-icons/lu";
+import { PiShapes } from "react-icons/pi";
+import { MdOutlineMarkEmailRead,MdArrowForwardIos } from "react-icons/md";
+
+
+
 
 
 import Slider from "react-slick";
@@ -245,7 +252,7 @@ const Home = () => {
                         <h5 style={{color:'#D39D4E'}}>I LOVE eyepopsDirect</h5>
                       </div>
                     </div>
-                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <hr style={{margin:'2rem 2rem 0rem 2rem '}} ></hr>
                     <div className='gcard-cmnt' >
                       <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
                         It's so user friendly and the customer service is incredible! I tell everyone who compliments my glasses (which happens a lot!) to use this site. Thank you
@@ -264,7 +271,7 @@ const Home = () => {
                         <h5 style={{color:'#D39D4E'}}>Great Quality</h5>
                       </div>
                     </div>
-                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <hr style={{margin:'2rem 2rem 0rem 2rem '}} ></hr>
                     <div className='gcard-cmnt' >
                       <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
                       So easy to order and great prices to top it off. I also like the fact that they carry Oakley brand products.
@@ -284,7 +291,7 @@ const Home = () => {
                         <h5 style={{color:'#D39D4E'}}>Great customer service!</h5>
                       </div>
                     </div>
-                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <hr style={{margin:'2rem 2rem 0rem 2rem '}} ></hr>
                     <div className='gcard-cmnt' >
                       <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
                       This is by far the easiest eyewear website to use when comparing different frames. It's helpful to have the sizes and try-on feature readily available in the favorites section.
@@ -304,7 +311,7 @@ const Home = () => {
                         <h5 style={{color:'#D39D4E'}}>Perfect Fit</h5>
                       </div>
                     </div>
-                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <hr style={{margin:'2rem 2rem 0rem 2rem '}} ></hr>
                     <div className='gcard-cmnt' >
                       <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
                       The website was easy to use, the glasses shipped quickly, and I get nothing but compliments on my new glasses! Thanks!!
@@ -325,7 +332,7 @@ const Home = () => {
                         <h5 style={{color:'#D39D4E'}}>Awesome!</h5>
                       </div>
                     </div>
-                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <hr style={{margin:'2rem 2rem 0rem 2rem '}} ></hr>
                     <div className='gcard-cmnt' >
                       <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
                       These glasses fit perfectly! They are super lightweight, yet also feel very sturdy at the same time. The colors and design are beautiful. Will be a returning customer!
@@ -345,7 +352,7 @@ const Home = () => {
                         <h5 style={{color:'#D39D4E'}}>So easy</h5>
                       </div>
                     </div>
-                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <hr style={{margin:'2rem 2rem 0rem 2rem '}} ></hr>
                     <div className='gcard-cmnt' >
                       <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
                       So easy to order and great prices to top it off. I also like the fact that they carry Oakley brand products.
@@ -365,7 +372,7 @@ const Home = () => {
                         <h5 style={{color:'#D39D4E'}}>Perfect</h5>
                       </div>
                     </div>
-                    <hr style={{margin:'2rem 2rem 1rem 2rem '}} ></hr>
+                    <hr style={{margin:'2rem 2rem 0rem 2rem '}} ></hr>
                     <div className='gcard-cmnt' >
                       <h5 style={{textAlign:'start',margin:'0rem 2rem 0rem 2rem'}}>
                         I tell everyone who compliments my glasses (which happens a lot!) to use this site. Thank you
@@ -373,12 +380,55 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-               
-               
               </Slider>
             </div>
           </div>
+        </div>
 
+        <div className='section-h'>
+         <div className='h-child'>
+         <h2 style={{fontWeight:'700'}}>Have Glasses Questions?</h2>
+         <h5>We’ve got answers. Learn how to find styles for your face shape while <br/>buying prescription glasses, understand your prescription, and even measure your <br/> pupillary distance at home without an eye exam!</h5>
+            <div className='h-contain'>
+              <div className='h-contain-logo'>
+               <div className='h-icon'>
+                <RiPagesLine style={{fontSize:'3rem', color:'black'}}/>
+               </div>
+               <h5 className='mt-3'  >How to Read a Prescription</h5>
+              </div>
+
+              <div className='h-contain-logo'>
+                <div className='h-icon'>
+                  <LuScale3D style={{ fontSize: '3rem', color: 'black' }} />
+                </div>
+                <h5 className='mt-3'>Pupillary Distance</h5>
+              </div>
+
+              <div className='h-contain-logo'>
+              <div className='h-icon'>
+                  <PiShapes style={{ fontSize: '3rem', color: 'black' }} />
+                </div>
+                <h5 className='mt-3'>Pupillary Distance</h5>
+              </div>
+
+              <div className='h-contain-logo'>
+              <div className='h-icon'>
+                  <TbDeviceMobileDollar style={{ fontSize: '3rem', color: 'black' }} />
+                </div>
+                <h5 className='mt-3'>Pupillary Distance</h5>
+              </div>
+            </div>
+         </div>
+        </div>
+
+        <div className='section-i'>
+          <h1 style={{color:'white',fontWeight:'700'}}>Join The Exclusive Club</h1>
+           <h5 style={{color:'white'}}>See our latest collections & exclusive offers before the crowd!</h5>
+            <div className='i-innput mt-4'>
+             <MdOutlineMarkEmailRead style={{ fontSize: '2.3rem', width: '10%',  borderRadius: '.5rem' }} />
+              <input type='email' style={{ height: '2.3rem', width: '80%', borderStyle: 'none' }} placeholder='Email' required readOnly />
+              <MdArrowForwardIos type='submit' style={{ fontSize: '1.7rem', width: '10%',  borderRadius: '.5rem' }}/>
+            </div>
         </div>
 
 
