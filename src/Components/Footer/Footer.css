@@ -1,0 +1,16 @@
+.footer-container{
+    width: 100%;
+    height: 10rem;
+    background-color: #242424;
+}
+.footer-text{
+    font-family: 'Kaushan Script', cursive;
+}
+.text-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}

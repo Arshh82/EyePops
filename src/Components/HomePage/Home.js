@@ -18,6 +18,7 @@ import { MdOutlineMarkEmailRead,MdArrowForwardIos } from "react-icons/md";
 
 import Slider from "react-slick";
 import { RxWidth } from 'react-icons/rx';
+import Footer from '../Footer/Footer';
 
 
 let Himga = new URL ("/public/Images/Homepage/cover image.PNG",import.meta.url)
@@ -430,9 +431,7 @@ const Home = () => {
               <MdArrowForwardIos type='submit' style={{ fontSize: '1.7rem', width: '10%',  borderRadius: '.5rem' }}/>
             </div>
         </div>
-
-
-
+        <Footer/>
       </div>
       
      
