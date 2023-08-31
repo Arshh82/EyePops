@@ -1,26 +1,27 @@
-.home-container{
+.home-container {
     width: 100%;
     height: 32rem;
     background-color: #FAACA8;
-background-image: linear-gradient(-210deg, #FAACA8 0%, #DDD6F3 100%);
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-
-
+    background-image: linear-gradient(-210deg, #FAACA8 0%, #DDD6F3 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.home-poster{
+
+.home-poster {
     width: 58%;
     height: 100%;
     background-color: aquamarine;
 }
-.H-imga{
+
+.H-imga {
     width: 95%;
     height: auto;
     margin-top: 2rem;
     margin-right: 1rem;
 }
-.home-offer-text{
+
+.home-offer-text {
     text-align: center;
     width: 35%;
     height: 100%;
@@ -29,7 +30,11 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
 }
-.delivery-line{
+.hometext-head{
+    font-size: 3rem;
+}
+
+.delivery-line {
     width: 100%;
     height: 4rem;
     background-color: rgb(241, 241, 241);
@@ -38,11 +43,15 @@ justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
 }
-.delv-icon{
+
+.delv-icon {
     font-size: x-large;
     color: rgb(133, 93, 19);
 }
-.v-line{
+.del-txt{
+    font-size: large;
+}
+.v-line {
     margin-left: 1.7rem;
     margin-right: 1.7rem;
     width: .1rem;
@@ -50,23 +59,24 @@ justify-content: space-evenly;
     background-color: black;
 }
 
-.section-c{
+.section-c {
     width: 100%;
     height: 56rem;
-    /* background-color: rgb(194, 39, 39); */
+    background-color: rgb(194, 39, 39);
 }
-.c-ch-a{
+
+.c-ch-a {
     margin-top: 4rem;
     width: 100%;
     height: 18rem;
-    /* background-color: rgb(110, 0, 0); */
+    background-color: rgb(110, 0, 0);
     text-align: center;
 }
-.btn-cha{
+
+.btn-cha {
     width: 12rem;
     height: 2.5rem;
-    margin: 1.2rem;
-    border-style:solid;
+    border-style: solid;
     border-radius: 6px;
     border-width: 1px;
     background-color: rgba(255, 255, 255, 0);
@@ -74,123 +84,138 @@ justify-content: space-evenly;
     font-weight: 500;
 }
 
-.c-ch-b{
+.c-ch-b {
     margin-top: 1rem;
     width: 100%;
     height: 36rem;
-    /* background-color: rgb(110, 93, 0); */
+    background-color: rgb(110, 93, 0);
     text-align: center;
 
 }
-.ch-b-heading{
+
+.ch-b-heading {
     width: 100%;
     height: 4rem;
     text-align: center;
-    /* background-color: blanchedalmond; */
+    background-color: blanchedalmond;
 }
-.ch-b-Pcard{
+
+.ch-b-Pcard {
     width: 100%;
-    height: 26rem;
-    /* background-color: rgb(245, 108, 131); */
+    height: 27rem;
+    background-color: rgb(245, 108, 131);
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
 }
-.ch-b-Glas-card{
+
+.ch-b-Glas-card {
     width: 16rem;
     float: left;
     margin: 1rem;
     height: 18rem;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 }
-.ch-b-imgcard{
+
+.ch-b-imgcard {
     width: 100%;
     height: 80%;
     display: flex;
     align-items: center;
     background-color: rgb(241, 241, 241);
 }
-.ch-b-btn{
+
+.ch-b-btn {
     width: 100%;
     height: 5rem;
-    /* background-color: green; */
+    background-color: green;
 }
-.CHcard-container{
+
+.CHcard-container {
     width: 85%;
     overflow: hidden;
     height: 90%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: blue; */
-}
-.chcarda-img{
-    width: 100%;
-    height: auto;
-    
+    background-color: blue;
 }
 
-.section-d{
+.chcarda-img {
+    width: 100%;
+    height: auto;
+
+}
+
+.section-d {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     width: 100%;
     height: 40rem;
-    /* background-color: grey; */
+    background-color: grey;
 }
-.section-d-card-container{
+
+.section-d-card-container {
     width: 80%;
     height: 38rem;
     display: flex;
-    /* background-color: green; */
+    background-color: green;
 }
-.section-d-card{
+
+.section-d-card {
     margin: 1rem;
     width: 24rem;
     height: 36rem;
     text-align: center;
-    /* background-color: yellow; */
+    background-color: yellow;
 }
-.section-d-cardimage{
+
+.section-d-cardimage {
     width: 100%;
     height: 25rem;
-    /* background-color: grey; */
+    background-color: grey;
 }
-.section-d-cimage{
+
+.section-d-cimage {
     width: 100%;
     height: auto;
 }
-.section-e{
+
+.section-e {
     width: 100%;
     height: 31rem;
     display: flex;
-    justify-content:center ;
-    /* background-color: orange; */
+    justify-content: center;
+    background-color: orange;
 }
-.section-e-container{
+
+.section-e-container {
     display: flex;
     justify-content: center;
     width: 90%;
     height: 28rem;
-    /* background-color: midnightblue; */
+    background-color: midnightblue;
 }
-.section-e-card{
+
+.section-e-card {
     margin: 1rem;
     width: 39rem;
     height: 26rem;
     display: flex;
     justify-content: center;
     align-items: end;
-    /* background-color: grey; */
+    background-color: grey;
 }
-.e-card-text{
+
+.e-card-text {
     color: white;
     position: absolute;
     text-align: center;
 
 }
 
-.section-f{
+.section-f {
     width: 100%;
     height: 16.5rem;
     display: flex;
@@ -198,67 +223,74 @@ justify-content: space-evenly;
     align-items: center;
     background-color: rgb(248, 248, 248);
 }
-.section-f-textcontainer{
+
+.section-f-textcontainer {
     text-align: center;
 }
 
-.section-g{
+.section-g {
     margin-top: 1rem;
     width: 100%;
-    height: 25rem;
+    height: 26rem;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    /* background-color: pink; */
+    background-color: pink;
 }
 
-.section-g-child-a{
+.section-g-child-a {
     text-align: center;
     width: 100%;
     height: 3rem;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
 }
-.section-g-child-b{
+
+.section-g-child-b {
     margin-top: 1rem;
     text-align: center;
     width: 80%;
     min-height: 20rem;
     max-height: 2rem;
-  
-    /* background-color: blueviolet; */
+
+    background-color: blueviolet;
 }
-.section-g-card{
+
+.section-g-card {
     height: 18.5rem;
-    background-color:rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
     margin: .6rem;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: scroll;
 }
-.g-card-up{
+
+.g-card-up {
     width: 100%;
     height: 6rem;
-    /* background-color: yellow; */
+    background-color: yellow;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: row;
 }
-.gcard-cintainer{
+
+.gcard-cintainer {
     width: 5rem;
     height: 5rem;
     border-radius: 5rem;
-    /* background-color: black; */
+    background-color: black;
     overflow: hidden;
     margin: 1.5rem 1.5rem .5rem 1rem;
 }
-.gcard-text{
+
+.gcard-text {
     margin: .5rem .5rem .5rem 0rem;
     text-align: start;
 }
-.gcard-cmnt{
-    /* background-color: #FAACA8; */
-    width:100%;
+
+.gcard-cmnt {
+    background-color: #FAACA8;
+    width: 100%;
     padding: .7rem;
     display: flex;
     justify-content: center;
@@ -266,7 +298,7 @@ justify-content: space-evenly;
     color: grey;
 }
 
-.section-h{
+.section-h {
     background-color: rgb(243, 243, 243);
     width: 100%;
     height: 26rem;
@@ -274,26 +306,29 @@ justify-content: space-evenly;
     justify-content: center;
     align-items: center;
 }
-.h-child{
+
+.h-child {
     width: 70%;
-    height: 24rem ;
-    /* background-color: brown; */
+    height: 24rem;
+    background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
-.h-contain{
+
+.h-contain {
     width: 80%;
     margin-top: 1rem;
     height: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
+    background-color: green;
 }
-.h-contain-logo{
+
+.h-contain-logo {
     width: 9rem;
     height: 100%;
     float: left;
@@ -302,9 +337,10 @@ justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     margin: 0rem 1.5rem 0rem 0rem;
-    /* background-color: grey; */
+    background-color: grey;
 }
-.h-icon{
+
+.h-icon {
     width: 5rem;
     height: 5rem;
     display: flex;
@@ -313,9 +349,10 @@ justify-content: space-evenly;
     border-radius: 8rem;
     border-color: black;
     border-width: 2px;
-    border-style:solid;
+    border-style: solid;
 }
-.section-i{
+
+.section-i {
     width: 100%;
     height: 15rem;
     display: flex;
@@ -324,9 +361,93 @@ justify-content: space-evenly;
     flex-direction: column;
     background-color: #D39D4E;
 }
-.i-innput{
+
+.i-innput {
     width: 28rem;
     background-color: white;
     height: 2.5rem;
     border-radius: .5rem;
+}
+
+@media screen and (max-width: 1380px) {
+    .home-container {
+        height: 28rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1270px) {
+    .home-container {
+        height: 26rem;
+    }
+    .home-offer-text {
+        text-align: center;
+        width: 35%;
+        height: 100%;
+    }
+    .hometext-head{
+        font-size: 2.5rem;
+    }
+    .delv-icon {
+        font-size: large;
+    }
+    .del-txt{
+        font-size: medium;
+    }
+    .section-d-cardimage {
+        width: 100%;
+        height: 22rem;
+    }
+    .section-d-card {
+        height: 34rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .home-container {
+        height: 22rem;
+    }
+    .ch-b-Glas-card {
+        height: 15.5rem;
+    }
+    .ch-b-imgcard {
+        height: 70%;
+    }
+    .section-d-cardimage {
+        height: 18rem;
+    }
+    .section-d-card-container {
+        width: 95%;
+        height: 34rem;
+    }
+    .section-d-card {
+        width: 26rem;
+        height: 30rem;
+    }
+    .section-e-container {
+        height: 24rem;
+        width: 98%;
+    }
+    .section-e-card {
+        height: 22rem;
+    }
+    .section-g-child-b {
+        margin-top: 1rem;
+        text-align: center;
+        width: 95%;
+    }
+    .h-child {
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 978px) {
+    .home-offer-text{
+        display: none;
+
+    }
+
 }
