@@ -21,11 +21,10 @@ const Footer = () => {
         <BsWhatsapp style={{color:'white', fontSize:'1.8rem', margin:'0.5rem'}}/>
         </a>
         <a href="https://www.linkedin.com/in/arshil-baig-a387b0188/" target="#">
-        <PiLinkedinLogoLight style={{color:'white', fontSize:'1.8rem', margin:'0.5rem'}}/>
+        <PiLinkedinLogoLight style={{color:'white', fontSize:'2.2rem', margin:'0.5rem'}}/>
         </a>
         </div>
-        <h5 style={{color:'white', fontSize:'1rem'}} className='mt-4'>2023 eyepops</h5>
-
+        <h5 style={{color:'white', fontSize:'1rem'}} className='mt-3'>2023 eyepops</h5>
         </div>
 
         </div>

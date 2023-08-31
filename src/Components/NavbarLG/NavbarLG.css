@@ -12,6 +12,7 @@
     display: none;
 }
 .Navbar-LG-Container{
+    z-index: 999;
     width: 100%;
     height: 4rem;
     background-color:#ffffff;

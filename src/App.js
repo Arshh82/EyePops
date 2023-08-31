@@ -5,6 +5,7 @@ import Cart from './Components/Cart/Cart'
 import NavbarLG from './Components/NavbarLG/NavbarLG';
 import Favorite from './Components/Favorite/Favorite';
 import Signin from './Components/Sign in page/Signin';
+import Footer from './Components/Footer/Footer';
 
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
       <Route path='/favorite' element={<Favorite/>}></Route>
       <Route path='/signin' element={<Signin/>}></Route>
     </Routes>
-    
+    <Footer/>
       
     </>
   );

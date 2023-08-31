@@ -79,10 +79,6 @@ const Home = () => {
         <div className='home-poster'>
           <img src={Himga} alt='x' className='H-imga' />
         </div>
-
-       
-
-
       </div>
 
       <div className='delivery-line'>
@@ -107,7 +103,12 @@ const Home = () => {
         <div className='v-line'></div>
       </div>
 
-      <div className='section-c'>
+      
+
+{/* -------------------------------------------------------------------------       */}
+      
+
+<div className='section-c'>
         <div className='c-ch-a'>
             <h1 style={{fontSize:'xxx-large',fontWeight:'700',color:' rgb(153, 93, 90)'}}>Every Vision of You</h1>
             <h4 style={{fontWeight:'700'}} className='mt-3'>It`s always a good day to buy glasses online.</h4><br/>
@@ -123,62 +124,57 @@ const Home = () => {
           </div>
 
           <div className='ch-b-Pcard'>
-          <div className='CHcard-container'>
+            <div className='CHcard-container'>
 
-          <div className='ch-b-Glas-card'>
-              <div className='ch-b-imgcard'>
-              <img src={Disimga} alt='x' className='chcarda-img'/>
+              <div className='ch-b-Glas-card'>
+                <div className='ch-b-imgcard'>
+                  <img src={Disimga} alt='x' className='chcarda-img' />
 
-              </div>
-              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel <br/> Rs.1500</span></div>
-
-            </div>
-
-            <div className='ch-b-Glas-card'>
-              <div className='ch-b-imgcard'>
-              <img src={Disimgb} alt='x' className='chcarda-img'/>
+                </div>
+                <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel <br /> Rs.1500</span></div>
 
               </div>
-              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Vinyl  <br/> Rs.4500</span></div>
 
-            </div>
+              <div className='ch-b-Glas-card'>
+                <div className='ch-b-imgcard'>
+                  <img src={Disimgb} alt='x' className='chcarda-img' />
 
-            <div className='ch-b-Glas-card'>
-              <div className='ch-b-imgcard'>
-              <img src={Disimgc} alt='x' className='chcarda-img'/>
-
-              </div>
-              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Ember  <br/> Rs.2200</span></div>
-
-            </div>
-
-            <div className='ch-b-Glas-card'>
-              <div className='ch-b-imgcard'>
-              <img src={Disimgd} alt='x' className='chcarda-img'/>
+                </div>
+                <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Vinyl  <br /> Rs.4500</span></div>
 
               </div>
-              <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Good Vibrations  <br/> Rs.5500</span></div>
 
+              <div className='ch-b-Glas-card'>
+                <div className='ch-b-imgcard'>
+                  <img src={Disimgc} alt='x' className='chcarda-img' />
+
+                </div>
+                <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Ember  <br /> Rs.2200</span></div>
+              </div>
+
+              <div className='ch-b-Glas-card'>
+                <div className='ch-b-imgcard'>
+                  <img src={Disimgd} alt='x' className='chcarda-img' />
+                </div>
+                <div className='mt-3'><span style={{ fontSize: 'larger', fontWeight: '500' }}>Good Vibrations  <br /> Rs.5500</span></div>
+              </div>
             </div>
-
-          </div>
-
           </div>
           <div className='ch-b-btn'>
-          <button className='btn-cha'>Shop best Sellers</button>
-
+            <button className='btn-cha'>Shop best Sellers</button>
           </div>
-
         </div>
-        
-        <div className='section-d'>
+      </div>
+
+
+      <div className='section-d'>
           <div className='section-d-card-container'>
             <div className='section-d-card'>
               <div className='section-d-cardimage'>
                 <img src={Dis2imge} alt='x' className='section-d-cimage' />
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Trending Titanium</h2>
-              <p>Lightweight eyewear that’s made to last.</p>
+              <p>Lightweight eyewear thats made to last.</p>
               <button className='mt-4 btn-cha'>Shop now</button>
             </div>
 
@@ -188,7 +184,7 @@ const Home = () => {
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Glasses On Sale</h2>
               <p>Good looking out. Enjoy up to 50% off these eyewear picks!</p>
-              <button className='mt-0 btn-cha'>Shop now</button>
+              <button className=' btn-cha'>Shop now</button>
             </div>
 
             <div className='section-d-card'>
@@ -197,7 +193,7 @@ const Home = () => {
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Fit & Style Quiz</h2>
               <p>Need some help figuring out which glasses are right for you? Find your perfect pair.</p>
-              <button className='mt-0 btn-cha'>Shop now</button>
+              <button className=' btn-cha'>Shop now</button>
             </div>
           </div>
         </div>
@@ -431,8 +427,6 @@ const Home = () => {
               <MdArrowForwardIos type='submit' style={{ fontSize: '1.7rem', width: '10%',  borderRadius: '.5rem' }}/>
             </div>
         </div>
-        <Footer/>
-      </div>
       
      
     </>
