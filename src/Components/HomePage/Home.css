@@ -451,3 +451,11 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .home-poster {
+        width: 78%;
+    }
+    
+
+}
