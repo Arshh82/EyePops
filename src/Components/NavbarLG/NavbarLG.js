@@ -82,7 +82,7 @@ const NavbarLG = () => {
 
           </div>
 
-          <div className='sm-search'>
+          <div className='sm-search '>
           <form>
           <div class="input-group search-devb">
             <input type="text" class="form-control" placeholder="Search for eyewear..." aria-label="Recipient's username" aria-describedby="basic-addon2" />

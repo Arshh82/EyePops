@@ -261,7 +261,7 @@
     background-color: rgb(240, 240, 240);
     margin: .6rem;
     border-radius: 20px;
-    overflow: scroll;
+    
 }
 
 .g-card-up {
@@ -373,6 +373,9 @@
     .home-container {
         height: 28rem;
     }
+    .section-g-card{
+        overflow-y: scroll;
+    }
 
 }
 
@@ -455,6 +458,9 @@
 @media screen and (max-width: 768px) {
     .home-poster {
         width: 78%;
+    }
+    .delivery-line{
+        display: none;
     }
     
 
