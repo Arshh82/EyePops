@@ -71,7 +71,7 @@ const Home = () => {
                 autoStart: true,
                 loop: true,
               }}
-            /></span> </h3><br/>
+            /></span></h3><br/>
           <button className='btn btn-dark'>Shop now</button>
           </div>
         </div>
