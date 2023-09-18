@@ -168,6 +168,7 @@
     width: 24rem;
     height: 36rem;
     text-align: center;
+    position: relative;
     background-color: yellow;
 }
 
@@ -462,6 +463,37 @@
     .delivery-line{
         display: none;
     }
-    
+    .ch-b-Glas-card {
+        height: 15.5rem;
+    }
+    .ch-b-imgcard {
+        height: 70%;
+    }
+    .CHcard-container {
+        width: 95%;
+    }
+    .section-d {
+        height: 35rem;
+    }
+    .section-d-card-container {
+        width: 95%;
+        height: 30rem;
+        overflow-x: scroll;
+    }
+    .section-d-cardimage {
+        height: 13.5rem;
+    }
+    .section-d-card {
+        height: 27rem;
+    }
+    .btn-cha {
+        width: 10rem;
+        height: 2rem;
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (max-width: 435px) {
 
 }
