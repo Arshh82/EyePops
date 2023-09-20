@@ -425,11 +425,6 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-
-                  
-
-                
-
                </div>
 
            
@@ -443,30 +438,30 @@ const Home = () => {
             <div className='h-contain'>
               <div className='h-contain-logo'>
                <div className='h-icon'>
-                <RiPagesLine style={{fontSize:'3rem', color:'black'}}/>
+                <RiPagesLine style={{fontSize:'3rem', color:'black'} }className='sm-iconn'/>
                </div>
-               <h5 className='mt-3'  >How to Read a Prescription</h5>
+               <h5 className='sm-fontt mt-5'>How to Read a direction</h5>
               </div>
 
               <div className='h-contain-logo'>
                 <div className='h-icon'>
-                  <LuScale3D style={{ fontSize: '3rem', color: 'black' }} />
+                  <LuScale3D style={{ fontSize: '3rem', color: 'black' }} className='sm-iconn' />
                 </div>
-                <h5 className='mt-3'>Pupillary Distance</h5>
+                <h5 className='sm-fontt mt-5'>Pupillary Distance</h5>
               </div>
 
               <div className='h-contain-logo'>
               <div className='h-icon'>
-                  <PiShapes style={{ fontSize: '3rem', color: 'black' }} />
+                  <PiShapes style={{ fontSize: '3rem', color: 'black' }}  className='sm-iconn'/>
                 </div>
-                <h5 className='mt-3'>Pupillary Distance</h5>
+                <h5 className='sm-fontt  mt-5'>Frames & Shapes </h5>
               </div>
 
               <div className='h-contain-logo'>
               <div className='h-icon'>
-                  <TbDeviceMobileDollar style={{ fontSize: '3rem', color: 'black' }} />
+                  <TbDeviceMobileDollar style={{ fontSize: '3rem', color: 'black' }}  className='sm-iconn'/>
                 </div>
-                <h5 className='mt-3'>Pupillary Distance</h5>
+                <h5 className='sm-fontt mt-5'>Buy Glasses Online </h5>
               </div>
             </div>
          </div>

@@ -306,7 +306,7 @@
 
 .section-f-textcontainer {
     text-align: center;
-   
+
     ;
 }
 
@@ -331,11 +331,11 @@
 .section-g-child-b {
     margin-top: 1rem;
     text-align: center;
-     position: relative;
-     overflow: hidden;
-     display: flex;
-     justify-content: start;
-     flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
     width: 80%;
     min-height: 20rem;
     /* background-color: blueviolet; */
@@ -389,7 +389,7 @@
 .section-h {
     background-color: rgb(243, 243, 243);
     width: 100%;
-    height: 26rem;
+    height: 28rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,7 +398,7 @@
 .h-child {
     width: 70%;
     height: 24rem;
-    background-color: brown;
+    /* background-color: brown; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,7 +413,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .h-contain-logo {
@@ -425,7 +425,7 @@
     align-items: center;
     flex-direction: column;
     margin: 0rem 1.5rem 0rem 0rem;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .h-icon {
@@ -444,6 +444,7 @@
     width: 100%;
     height: 15rem;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -634,20 +635,66 @@
         height: 28rem;
         float: left;
     }
+
     .d-imgg {
         position: absolute;
         top: 0;
     }
-    .e-card-text{
+
+    .e-card-text {
         color: black;
     }
+
     .section-f {
         width: 100%;
         height: 30rem;
         font-weight: 900;
     }
-    .section-f-textcontainer{
+
+    .section-f-textcontainer {
         margin: 1.5rem
+    }
+
+    .h-contain {
+        width: 100%;
+        margin-top: 1rem;
+        height: 12rem;
+    }
+
+    .h-contain-logo {
+        width: 7rem;
+        position: relative;
+        height: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0rem .7rem 0rem 0rem;
+    }
+
+    .h-icon {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 0;
+
+        border-radius: 8rem;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    .sm-iconn {
+
+        font-size: 1.5rem;
+    }
+
+    .i-innput {
+        width: 20rem;
+    }
+
+    .sm-fontt {
+        font-size: 0.9rem;
     }
 
 
