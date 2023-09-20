@@ -11,6 +11,7 @@ import { RiPagesLine } from "react-icons/ri";
 import { LuScale3D } from "react-icons/lu";
 import { PiShapes } from "react-icons/pi";
 import { MdOutlineMarkEmailRead,MdArrowForwardIos } from "react-icons/md";
+import { HiChevronLeft,HiChevronRight } from "react-icons/hi";
 
 
 
@@ -56,6 +57,21 @@ const Home = () => {
       slidesToScroll: 1,
     };
 
+    const btnpressprev = () => {
+      let box = document.querySelector('.product-container');
+  
+          let width = box.clientWidth;
+          box.scrollLeft = box.scrollLeft - width;
+          console.log(width)
+      }
+  
+      const btnpressnext = () => {
+      let box = document.querySelector('.product-container');
+  
+          let width = box.clientWidth;
+          box.scrollLeft = box.scrollLeft + width;
+          console.log(width)
+      }
   
   return (
     <>
@@ -122,44 +138,53 @@ const Home = () => {
           <div className='ch-b-heading'>
             <h1 style={{ fontSize: '2.5rem', fontWeight: '700' }}>Best Selling Glasses</h1>
           </div>
-
+         
           <div className='ch-b-Pcard'>
             <div className='CHcard-container'>
 
-              <div className='ch-b-Glas-card'>
-                <div className='ch-b-imgcard'>
-                  <img src={Disimga} alt='x' className='chcarda-img' />
+               <button className="pre-btn" onClick={btnpressprev}><p><HiChevronLeft/></p></button>
+               <button className="next-btn" onClick={btnpressnext}><p><HiChevronRight/></p></button>
 
+              <div className="product-container">
+                <div className='ch-b-Glas-card'>
+                  <div className='ch-b-imgcard'>
+                    <img src={Disimga} alt='x' className='chcarda-img' />
+                  </div>
+                  <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel <br /> Rs.1500</span></div>
                 </div>
-                <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel <br /> Rs.1500</span></div>
 
-              </div>
-
-              <div className='ch-b-Glas-card'>
-                <div className='ch-b-imgcard'>
-                  <img src={Disimgb} alt='x' className='chcarda-img' />
-
+                <div className='ch-b-Glas-card'>
+                  <div className='ch-b-imgcard'>
+                    <img src={Disimgb} alt='x' className='chcarda-img' />
+                  </div>
+                  <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>Vinyl  <br /> Rs.4500</span></div>
                 </div>
-                <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>Vinyl  <br /> Rs.4500</span></div>
 
-              </div>
-
-              <div className='ch-b-Glas-card'>
-                <div className='ch-b-imgcard'>
-                  <img src={Disimgc} alt='x' className='chcarda-img' />
-
+                <div className='ch-b-Glas-card'>
+                  <div className='ch-b-imgcard'>
+                    <img src={Disimgc} alt='x' className='chcarda-img' />
+                  </div>
+                  <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>Ember  <br /> Rs.2200</span></div>
                 </div>
-                <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>Ember  <br /> Rs.2200</span></div>
-              </div>
 
-              <div className='ch-b-Glas-card'>
-                <div className='ch-b-imgcard'>
-                  <img src={Disimgd} alt='x' className='chcarda-img' />
+                <div className='ch-b-Glas-card'>
+                  <div className='ch-b-imgcard'>
+                    <img src={Disimgd} alt='x' className='chcarda-img' />
+                  </div>
+                  <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>Good Vibrations  <br /> Rs.5500</span></div>
                 </div>
-                <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>Good Vibrations  <br /> Rs.5500</span></div>
+
+                <div className='ch-b-Glas-card'>
+                  <div className='ch-b-imgcard'>
+                    <img src={Disimga} alt='x' className='chcarda-img' />
+                  </div>
+                  <div><span style={{ fontSize: 'larger', fontWeight: '500' }}>St Michel <br /> Rs.1500</span></div>
+                </div>
+
               </div>
             </div>
           </div>
+
           <div className='ch-b-btn'>
             <button className='btn-cha'>Shop best Sellers</button>
           </div>
@@ -169,13 +194,15 @@ const Home = () => {
 {/* -------------------------------------------------------------------------       */}
       <div className='section-d'>
           <div className='section-d-card-container'>
+
+               
             <div className='section-d-card'>
               <div className='section-d-cardimage'>
                 <img src={Dis2imge} alt='x' className='section-d-cimage' />
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Titanium</h2>
               <p>Lightweight eyewear thats made to last.</p>
-              <button className='mt-4 btn-cha'>Shop now</button>
+              <button className='sec-e-btn'>Shop now</button>
             </div>
 
             <div className='section-d-card'>
@@ -184,7 +211,7 @@ const Home = () => {
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Glasses On Sale</h2>
               <p>Good looking out. Enjoy up to 50% off these eyewear picks!</p>
-              <button className=' btn-cha'>Shop now</button>
+              <button className='sec-e-btn'>Shop now</button>
             </div>
 
             <div className='section-d-card'>
@@ -193,7 +220,7 @@ const Home = () => {
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Fit & Style Quiz</h2>
               <p>Need some help figuring out which glasses are right for you?</p>
-              <button className=' btn-cha'>Shop now</button>
+              <button className='sec-e-btn'>Shop now</button>
             </div>
           </div>
         </div>
