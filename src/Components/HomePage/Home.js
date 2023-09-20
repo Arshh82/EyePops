@@ -72,6 +72,22 @@ const Home = () => {
           box.scrollLeft = box.scrollLeft + width;
           console.log(width)
       }
+
+      const btnpressprevv = () => {
+        let boxx = document.querySelector('.product-containerr');
+    
+            let width = boxx.clientWidth;
+            boxx.scrollLeft = boxx.scrollLeft - width;
+            // console.log(width)
+        }
+    
+        const btnpressnextt = () => {
+        let boxx = document.querySelector('.product-containerr');
+    
+            let width = boxx.clientWidth;
+            boxx.scrollLeft = boxx.scrollLeft + width;
+            // console.log(width)
+        }
   
   return (
     <>
@@ -228,7 +244,9 @@ const Home = () => {
         <div className='section-e'>
           <div className='section-e-container'>
             <div className='section-e-card '>
+            <div className='d-imgg'>
               <img src={Dis3imgh} alt='x' className='d-flex w-100' />
+              </div>
               <div className='e-card-text mb-2'>
                 <h1 style={{ fontSize: 'xx-large' }}>Eco Eyewear</h1>
                 <p style={{ fontSize: 'larger', fontWeight: '500' }}>Featuring thoughtful sourced materials <br /> that support a sustainable future.</p>
@@ -237,10 +255,12 @@ const Home = () => {
             </div>
 
             <div className='section-e-card'>
-              <img src={Dis3imgi} alt='x' className='d-flex w-100' />
+            <div className='d-imgg' >
+              <img src={Dis3imgi} alt='x' className='  d-flex w-100' />
+              </div>
               <div className='e-card-text mb-2'>
                 <h1 style={{ fontSize: 'xx-large' }}>Designer Eyeglasses Sale</h1>
-                <p style={{ fontSize: 'larger', fontWeight: '500' }}>50% OFF Lenses + 30 % OFF Frames with code: <br /> DBSAVINGS</p>
+                <p style={{ fontSize: 'larger', fontWeight: '500' }}> 30 % OFF Frames with code: <br /> DBSAVINGS</p>
                 <button className='mt-1 btn-cha ' style={{ backgroundColor: 'white', borderStyle: 'none' }}>Shop now</button>
               </div>
             </div>
@@ -263,9 +283,10 @@ const Home = () => {
           <h1>The reviews are in!</h1>
          </div>
           <div className='section-g-child-b'>
-            <div>
-              <Slider {...settings} >
-                <div>
+          <button className="pre-btn" onClick={btnpressprevv}><p><HiChevronLeft/></p></button>
+               <button className="next-btn" onClick={btnpressnextt}><p><HiChevronRight/></p></button>
+
+               <div className="product-containerr">
                   <div className='section-g-card'>
                     <div className='g-card-up' >
                       <div className='gcard-cintainer'>
@@ -283,8 +304,8 @@ const Home = () => {
                       </h5>
                     </div>
                   </div>
-                </div>
-                <div>
+
+                  <div>
                   <div className='section-g-card'>
                     <div className='g-card-up' >
                       <div className='gcard-cintainer'>
@@ -404,8 +425,14 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </Slider>
-            </div>
+
+                  
+
+                
+
+               </div>
+
+           
           </div>
         </div>
 {/* -------------------------------------------------------------------------       */}

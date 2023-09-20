@@ -30,7 +30,8 @@
     justify-content: center;
     align-items: center;
 }
-.hometext-head{
+
+.hometext-head {
     font-size: 3rem;
 }
 
@@ -48,9 +49,11 @@
     font-size: x-large;
     color: rgb(133, 93, 19);
 }
-.del-txt{
+
+.del-txt {
     font-size: large;
 }
+
 .v-line {
     margin-left: 1.7rem;
     margin-right: 1.7rem;
@@ -109,13 +112,15 @@
     align-items: center;
 
 }
-.product-container,.product-container2 {
+
+.product-container, .product-containerr {
     padding: 0 10px;
     display: flex;
     justify-content: start;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 .mycard {
     min-width: 250px;
     max-width: 250px;
@@ -125,6 +130,7 @@
     margin: 40px;
     color: white;
 }
+
 .pre-btn,
 .next-btn {
     border: none;
@@ -146,7 +152,7 @@
 .next-btn p,
 .pre-btn p {
     font-size: 50px;
-   
+
 }
 
 .ch-b-Glas-card {
@@ -217,6 +223,7 @@
     min-width: 22rem;
     max-width: 22rem;
     height: 32.5rem;
+    margin-left: 1.5rem;
     border-radius: 20px;
     text-align: center;
     background-color: #e2ceb9;
@@ -238,7 +245,8 @@
     border-radius: 20px;
 
 }
-.sec-e-btn{
+
+.sec-e-btn {
     position: absolute;
     bottom: 0;
     margin-bottom: 0.5rem;
@@ -258,7 +266,7 @@
     height: 31rem;
     display: flex;
     justify-content: center;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .section-e-container {
@@ -266,7 +274,7 @@
     justify-content: center;
     width: 90%;
     height: 28rem;
-    background-color: midnightblue;
+    /* background-color: midnightblue; */
 }
 
 .section-e-card {
@@ -276,7 +284,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    background-color: grey;
+    background-color: rgb(219, 217, 217);
 }
 
 .e-card-text {
@@ -293,10 +301,13 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(248, 248, 248);
+    /* background-color: rgb(43, 126, 221); */
 }
 
 .section-f-textcontainer {
     text-align: center;
+   
+    ;
 }
 
 .section-g {
@@ -307,38 +318,44 @@
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .section-g-child-a {
     text-align: center;
     width: 100%;
     height: 3rem;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .section-g-child-b {
     margin-top: 1rem;
     text-align: center;
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     justify-content: start;
+     flex-direction: row;
     width: 80%;
     min-height: 20rem;
-    max-height: 2rem;
-
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .section-g-card {
+    min-width: 24rem;
+    max-width: 24rem;
     height: 18.5rem;
     background-color: rgb(240, 240, 240);
-    margin: .6rem;
+    margin: 1rem;
+    margin-left: 0.3rem;
     border-radius: 20px;
-    
+
 }
 
 .g-card-up {
     width: 100%;
     height: 6rem;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: start;
     align-items: center;
@@ -360,7 +377,7 @@
 }
 
 .gcard-cmnt {
-    background-color: #FAACA8;
+    /* background-color: #FAACA8; */
     width: 100%;
     padding: .7rem;
     display: flex;
@@ -445,12 +462,15 @@
     .home-container {
         height: 28rem;
     }
-    .section-g-card{
+
+    .section-g-card {
         overflow-y: scroll;
     }
+
     .CHcard-container {
-          overflow-x: scroll;
+        overflow-x: scroll;
     }
+
     .section-d-card-container {
         overflow-x: auto;
     }
@@ -462,21 +482,25 @@
     .home-container {
         height: 26rem;
     }
+
     .home-offer-text {
         text-align: center;
         width: 35%;
         height: 100%;
     }
-    .hometext-head{
+
+    .hometext-head {
         font-size: 2.5rem;
     }
+
     .delv-icon {
         font-size: large;
     }
-    .del-txt{
+
+    .del-txt {
         font-size: medium;
     }
-   
+
 
 }
 
@@ -484,36 +508,41 @@
     .home-container {
         height: 22rem;
     }
+
     .ch-b-Glas-card {
         height: 21rem;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
+
     .ch-b-imgcard {
         height: 70%;
     }
-   
-    
+
+
     .section-e-container {
         height: 24rem;
         width: 98%;
     }
+
     .section-e-card {
         height: 22rem;
     }
+
     .section-g-child-b {
         margin-top: 1rem;
         text-align: center;
         width: 95%;
     }
+
     .h-child {
         width: 90%;
     }
-    
+
 }
 
 @media screen and (max-width: 978px) {
-    .home-offer-text{
+    .home-offer-text {
         display: none;
 
     }
@@ -524,21 +553,26 @@
     .home-poster {
         width: 78%;
     }
-    .delivery-line{
+
+    .delivery-line {
         display: none;
     }
+
     .ch-b-Glas-card {
         margin-left: 3.5rem;
         margin-right: 3.5rem;
         height: 21rem;
     }
+
     .ch-b-imgcard {
         height: 70%;
     }
+
     .CHcard-container {
         width: 95%;
-          overflow-x: scroll;
+        overflow-x: scroll;
     }
+
     .btn-cha {
         width: 10rem;
         height: 2rem;
@@ -552,29 +586,71 @@
         height: 17rem;
 
     }
+
     .home-poster {
         width: 98%;
     }
+
     .H-imga {
         width: 98%;
         margin: 1.5rem .2rem .2rem .2rem;
     }
+
     .section-c {
         width: 100%;
         height: 69rem;
     }
+
     .c-ch-a {
         margin-top: 4rem;
         width: 100%;
         height: 29rem;
     }
+
     .CHcard-container {
         overflow-y: scroll;
     }
+
     .section-d-card-container {
         width: 95%;
     }
-  
+
+    .section-e {
+        width: 100%;
+        height: 65rem;
+    }
+
+    .section-e-container {
+        display: block;
+        width: 90%;
+        height: 60rem;
+    }
+
+    .section-e-card {
+        position: relative;
+        margin: 1rem;
+        min-width: 90%;
+        max-width: 90%;
+        height: 28rem;
+        float: left;
+    }
+    .d-imgg {
+        position: absolute;
+        top: 0;
+    }
+    .e-card-text{
+        color: black;
+    }
+    .section-f {
+        width: 100%;
+        height: 30rem;
+        font-weight: 900;
+    }
+    .section-f-textcontainer{
+        margin: 1.5rem
+    }
+
+
 
 
 }
