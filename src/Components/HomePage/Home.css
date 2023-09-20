@@ -159,7 +159,6 @@
     min-width: 18rem;
     max-width: 18rem;
     margin: 1rem;
-    margin-left: 1.7rem;
     height: 20rem;
     border-radius: 20px;
     background-color: rgb(235, 235, 235);
@@ -512,8 +511,6 @@
 
     .ch-b-Glas-card {
         height: 21rem;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
     }
 
     .ch-b-imgcard {
@@ -560,8 +557,6 @@
     }
 
     .ch-b-Glas-card {
-        margin-left: 3.5rem;
-        margin-right: 3.5rem;
         height: 21rem;
     }
 
@@ -695,6 +690,10 @@
 
     .sm-fontt {
         font-size: 0.9rem;
+    }
+    .ch-b-Glas-card{
+        margin-left: 3.8rem;
+        margin-right: 2.5rem;
     }
 
 
