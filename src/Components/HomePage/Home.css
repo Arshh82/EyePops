@@ -195,7 +195,7 @@
     justify-content: center;
     width: 100%;
     height: 40rem;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .section-d-card-container {
@@ -205,7 +205,7 @@
     position: relative;
     justify-content: start;
     flex-direction: row;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .section-d-card {
@@ -219,17 +219,17 @@
     height: 32.5rem;
     border-radius: 20px;
     text-align: center;
-    background-color:#F9F6F1;
+    background-color: #e2ceb9;
 }
 
 .section-d-cardimage {
     position: relative;
-    border-radius: 20px;
+    /* border-radius: 25px; */
 
     top: 0;
     width: 100%;
     height: auto;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .section-d-cimage {
