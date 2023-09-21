@@ -22,6 +22,17 @@ let eyemodel1 = new URL ("/public/Images/Hover-menu/Eyeglass/frem-1.avif",import
 let eyemodel2 = new URL ("/public/Images/Hover-menu/Eyeglass/frem-2.avif",import.meta.url)
 let eyemodel3 = new URL ("/public/Images/Hover-menu/Eyeglass/frem-3.avif",import.meta.url)
 
+let sunmodel1 = new URL ("/public/Images/Hover-menu/Sunglass/2frem-1.avif",import.meta.url)
+let sunmodel2 = new URL ("/public/Images/Hover-menu/Sunglass/2frem-2.avif",import.meta.url)
+let sunmodel3 = new URL ("/public/Images/Hover-menu/Sunglass/2frem-3.avif",import.meta.url)
+
+let brandmodel1 = new URL ("/public/Images/Hover-menu/Brand/brand-1.avif",import.meta.url)
+let brandmodel2 = new URL ("/public/Images/Hover-menu/Brand/Brand-2.avif",import.meta.url)
+let brandmodel3 = new URL ("/public/Images/Hover-menu/Brand/brand-3.avif",import.meta.url)
+let brandmodel4 = new URL ("/public/Images/Hover-menu/Brand/Brand-4.avif",import.meta.url)
+let brandmodel5 = new URL ("/public/Images/Hover-menu/Brand/Brand-5.avif",import.meta.url)
+
+
 
 const NavbarLG = () => {
   const [show, setShow] = useState(false);
@@ -58,12 +69,12 @@ const NavbarLG = () => {
                  <span>Eyeglasses</span>
             <div className='eyeglass-hover-menu'>
               <div className='menu-style1'>
-                <ul style={{ listStyle: 'none', color:'black', fontWeight:'500' }}>
+                <ul style={{ listStyle: 'none', color: 'black', fontWeight: '500' }}>
                   <li>
                     <div className='style1-top'>Shop</div>
                   </li>
                   <li>
-                    <div>Eyeglass</div>
+                    <div  style={{ color: '#D09839' }}>Computer Glasses</div>
                   </li>
                   <li>
                     <div>Women`s Eyeglass</div>
@@ -74,14 +85,15 @@ const NavbarLG = () => {
                   <li>
                     <div>Kid`s Eyeglass</div>
                   </li>
+                  
                   <li>
-                    <div style={{color:'red'}}>On Sale</div>
+                    <div style={{ color: 'red' }}>On Sale</div>
                   </li>
                 </ul>
               </div>
 
               <div className='menu-style1'>
-                <ul style={{ listStyle: 'none', color:'black', fontWeight:'500' }}>
+                <ul style={{ listStyle: 'none', color: 'black', fontWeight: '500' }}>
                   <li>
                     <div className='style1-top'>Featured</div>
                   </li>
@@ -109,9 +121,11 @@ const NavbarLG = () => {
               </div>
               <div className='eyeglass-hover-imgfrem1'>
                 <img src={eyemodel2} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                   <span className='frem1text'>Vintage Spirit</span>
               </div>
               <div className='eyeglass-hover-imgfrem1'>
                 <img src={eyemodel3} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                   <span className='frem1text'>Bio-Nylon</span>
               </div>
 
             </div>
@@ -121,11 +135,94 @@ const NavbarLG = () => {
 
                <div className='Sunglass-sec'>
                  <span>Sunglasses</span>
+                 <div className='eyeglass-hover-menu2'>
+              <div className='menu-style1'>
+                <ul style={{ listStyle: 'none', color: 'black', fontWeight: '500' }}>
+                  <li>
+                    <div className='style1-top'>Shop</div>
+                  </li>
+                  <li>
+                    <div>Sunglasses</div>
+                  </li>
+                  <li>
+                    <div>Women's Sunglasses</div>
+                  </li>
+                  <li>
+                    <div>Men's Sunglasses</div>
+                  </li>
+                  <li>
+                    <div>Kids' Sunglasses</div>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+
+              <div className='menu-style1'>
+                <ul style={{ listStyle: 'none', color: 'black', fontWeight: '500' }}>
+                  <li>
+                    <div className='style1-top'>Featured</div>
+                  </li>
+                  <li>
+                    <div>New Arrivals</div>
+                  </li>
+                  <li>
+                    <div>Prescription Sunglasses</div>
+                  </li>
+                  <li>
+                    <div>Polarized Sunglasses</div>
+                  </li>
+                  <li>
+                    <div style={{color:'red'}}>On Sale</div>
+                  </li>
+                 
+                </ul>
+              </div>
+
+              <div className='eyeglass-hover-imgfrem1'>
+                <img src={sunmodel1} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text'>Ray Ban Sunglasses</span>
+              </div>
+              <div className='eyeglass-hover-imgfrem1'>
+                <img src={sunmodel2} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text'>Oakley Sunglasses</span>
+              </div>
+              <div className='eyeglass-hover-imgfrem1'>
+                <img src={sunmodel3} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text'>Eco Friendly</span>
+              </div>
+
+            </div>
        
                </div>
 
                <div className='Computer-sec'>
-                 <span>Computer glasses</span>
+                 <span>Premium Brands</span>
+
+                 <div className='eyeglass-hover-menu2'>
+
+              <div className='eyeglass-hover-imgfrem2'>
+                <img src={brandmodel1} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Ray Ban</span>
+              </div>
+              <div className='eyeglass-hover-imgfrem2'>
+                <img src={brandmodel2} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Oakley</span>
+              </div>
+              <div className='eyeglass-hover-imgfrem2'>
+                <img src={brandmodel3} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Arnette</span>
+              </div>
+              <div className='eyeglass-hover-imgfrem2'>
+                <img src={brandmodel4} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Vogue</span>
+              </div>
+              <div className='eyeglass-hover-imgfrem2'>
+                <img src={brandmodel5} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>RFLKT</span>
+              </div>
+
+            </div>
        
                </div>
 

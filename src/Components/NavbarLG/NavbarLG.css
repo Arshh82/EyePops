@@ -48,6 +48,18 @@
     }
     
 }
+.Sunglass-sec:hover{
+    .eyeglass-hover-menu2{
+        display: block;
+    }
+    
+}
+.Computer-sec:hover{
+    .eyeglass-hover-menu2{
+        display: block;
+    }
+
+}
 .menu-style1{
     position: relative;
     float: left;
@@ -76,27 +88,42 @@ ul li{
     overflow: hidden;
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.500);
 }
+.eyeglass-hover-imgfrem2{
+    
+    position: relative;
+    top: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    height: 80%;
+    width: 12.7rem;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.500);
+}
 
 
 .frem1text{
     position: absolute;
     color: white;
     bottom: 0;
-    left: 0.5rem;
     font-size: medium;
     text-align: center;
+    width: 100%;
+    height: 2rem;
+    backdrop-filter: blur(3px);
+    /* background-color: rgba(0, 7, 5, 0.459); */
 }
 
 
-.eyeglass-hover-menu{
-    display: block;
+.eyeglass-hover-menu,.eyeglass-hover-menu2{
+    display: none;
     border-radius: 0px 0px 10px 10px;
     position: absolute;
     top: 4rem;
     /* margin-left: 50rem; */
     left: 15rem;
-    width: 70rem;
-    height: 35vh;
+    min-width: 70rem;
+    height: 16rem;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.671);
