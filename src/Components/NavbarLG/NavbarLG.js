@@ -18,6 +18,10 @@ import { Link } from 'react-router-dom';
 
 let Logo = new URL ("/public/Images/Navbar-Logo/Brand Lgo.PNG",import.meta.url)
 
+let eyemodel1 = new URL ("/public/Images/Hover-menu/Eyeglass/frem-1.avif",import.meta.url)
+let eyemodel2 = new URL ("/public/Images/Hover-menu/Eyeglass/frem-2.avif",import.meta.url)
+let eyemodel3 = new URL ("/public/Images/Hover-menu/Eyeglass/frem-3.avif",import.meta.url)
+
 
 const NavbarLG = () => {
   const [show, setShow] = useState(false);
@@ -45,13 +49,75 @@ const NavbarLG = () => {
       </Offcanvas>
 
               <div className='LG-Navbar-secA'>
-              <Link to='/' className='llink' style={{ textDecoration: 'none' }}> <img src={Logo} alt='X' className='Brand-logo ' /></Link>
+                <Link to='/' className='llink' style={{ textDecoration: 'none' }}> 
+                 <img src={Logo} alt='X' className='Brand-logo ' />
+                </Link>
               </div>
-
+               <Link style={{ textDecoration: 'none' }}>
                <div className='Eyeglass-sec'>
                  <span>Eyeglasses</span>
+            <div className='eyeglass-hover-menu'>
+              <div className='menu-style1'>
+                <ul style={{ listStyle: 'none', color:'black', fontWeight:'500' }}>
+                  <li>
+                    <div className='style1-top'>Shop</div>
+                  </li>
+                  <li>
+                    <div>Eyeglass</div>
+                  </li>
+                  <li>
+                    <div>Women`s Eyeglass</div>
+                  </li>
+                  <li>
+                    <div>Men`s Eyeglass</div>
+                  </li>
+                  <li>
+                    <div>Kid`s Eyeglass</div>
+                  </li>
+                  <li>
+                    <div style={{color:'red'}}>On Sale</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div className='menu-style1'>
+                <ul style={{ listStyle: 'none', color:'black', fontWeight:'500' }}>
+                  <li>
+                    <div className='style1-top'>Featured</div>
+                  </li>
+                  <li>
+                    <div>New Arrivals</div>
+                  </li>
+                  <li>
+                    <div>Ray-Ban Glasses</div>
+                  </li>
+                  <li>
+                    <div>2-Day Delivery</div>
+                  </li>
+                  <li>
+                    <div>Eyeglass Frames</div>
+                  </li>
+                  <li>
+                    <div>Glasses under $19</div>
+                  </li>
+                </ul>
+              </div>
+
+              <div className='eyeglass-hover-imgfrem1'>
+                <img src={eyemodel1} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+                <span className='frem1text'>EBD Clear Premium</span>
+              </div>
+              <div className='eyeglass-hover-imgfrem1'>
+                <img src={eyemodel2} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+              </div>
+              <div className='eyeglass-hover-imgfrem1'>
+                <img src={eyemodel3} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+              </div>
+
+            </div>
        
                </div>
+               </Link>  
 
                <div className='Sunglass-sec'>
                  <span>Sunglasses</span>
@@ -89,8 +155,10 @@ const NavbarLG = () => {
            
           </div>
           </form>
+          
 
           </div>
+          
     </>
   )
 }

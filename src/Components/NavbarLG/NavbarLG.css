@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    font-size:0.7rem;
+    font-size:1rem;
 }
 .menu-togle{
     display: none;
@@ -39,8 +39,68 @@
     font-size: larger;
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     float: left;
+}
+.Eyeglass-sec:hover{
+    .eyeglass-hover-menu{
+        display: block;
+    }
+    
+}
+.menu-style1{
+    position: relative;
+    float: left;
+    width: 16rem;
+    padding-top: 2rem; ;
+    height: 100%;
+    /* background-color: aqua; */
+}
+ul li{
+    margin: 0.3rem;
+}
+.style1-top{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: gray;
+}
+.eyeglass-hover-imgfrem1{
+    
+    position: relative;
+    top: 0.7rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    height: 80%;
+    width: 10rem;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.500);
+}
+
+
+.frem1text{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 0.5rem;
+    font-size: medium;
+    text-align: center;
+}
+
+
+.eyeglass-hover-menu{
+    display: block;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 4rem;
+    /* margin-left: 50rem; */
+    left: 15rem;
+    width: 70rem;
+    height: 35vh;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.671);
+    background-color: rgba(255, 255, 255, 0.425);
 }
 .Computer-sec{
     height: 100%;
@@ -115,6 +175,7 @@
  display: none;   
 }
 
+
 /* ------------------------------------------------- */
 @media screen and (max-width: 1380px) {
     .Eyeglass-sec,.Sunglass-sec,.Computer-sec,.search-sec{
@@ -168,6 +229,16 @@
     .Brand-logo{
         margin-top: 12%;
         height: 45%;
+    }
+    .home-top-offersec{
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(250, 245, 214);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size:0.7rem;
     }
     
 }
