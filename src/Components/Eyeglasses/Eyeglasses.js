@@ -1,0 +1,234 @@
+import React from 'react';
+import './Eyeglasses.css'
+import { Link } from 'react-router-dom';
+
+import { TbMathGreater } from "react-icons/tb";
+import { HiPlus,HiMinusSm } from "react-icons/hi";
+
+
+
+
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Collapse from '@mui/material/Collapse';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+// import InboxIcon from '@mui/icons-material/MoveToInbox';
+
+// import ExpandLess from '@mui/icons-material/ExpandLess';
+// import ExpandMore from '@mui/icons-material/ExpandMore';
+// import StarBorder from '@mui/icons-material/StarBorder';
+
+const Eyeglasses = () => {
+
+    const [open1, setOpen1] = React.useState(true);
+    const handleClick1 = () => {
+        setOpen1(!open1);
+    };
+    const [open2, setOpen2] = React.useState(true);
+    const handleClick2 = () => {
+        setOpen2(!open2);
+    };
+    const [open3, setOpen3] = React.useState(true);
+    const handleClick3 = () => {
+        setOpen3(!open3);
+    };
+    const [open4, setOpen4] = React.useState(true);
+    const handleClick4 = () => {
+        setOpen4(!open4);
+    };
+    const [open5, setOpen5] = React.useState(true);
+    const handleClick5 = () => {
+        setOpen5(!open5);
+    };
+    const [open6, setOpen6] = React.useState(true);
+    const handleClick6 = () => {
+        setOpen6(!open6);
+    };
+
+    let Helpimg = new URL ("/public/Images/help.png",import.meta.url) 
+
+  return (
+      <>
+          <div className='containr-1'>
+              <div className='text-container-1'>
+                  <div>
+                      <span className='containr-1-link'><Link to='/' style={{ textDecoration: 'none' }}><span> Home </span> </Link> <TbMathGreater /> <span> Eyeglasses </span> </span>
+                  </div>
+                  <div>
+                      <span className='containr-1-head'>Buy Prescription Eyeglasses</span>
+                  </div>
+              </div>
+          </div>
+
+          <div className='product-containr'>
+              <div className='filter-containr sticky-top'>
+              <div>
+                <span className='text-fil'>Filters</span>
+              </div>
+                  <div className='mt-5'>
+                      <div>
+                          <List sx={{ width: '100%' }}
+                              aria-labelledby="nested-list-subheader">
+                              <ListItemButton onClick={handleClick1}>
+
+                                  <ListItemText primary="Gender" />
+                                  {open1 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open1} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                              {/* <StarBorder /> */}
+                                          </ListItemIcon>
+                                          {/* <ListItemText primary="Starred" />
+                                              <ListItemText primary="Starred" /> */}
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick2}>
+
+                                  <ListItemText primary="Brand" />
+                                  {open2 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open2} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                              {/* <StarBorder /> */}
+                                          </ListItemIcon>
+                                          {/* <ListItemText primary="Starred" />
+                                              <ListItemText primary="Starred" /> */}
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick3}>
+
+                                  <ListItemText primary="Size" />
+                                  {open3 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open3} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                              {/* <StarBorder /> */}
+                                          </ListItemIcon>
+                                          {/* <ListItemText primary="Starred" />
+                                              <ListItemText primary="Starred" /> */}
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick4}>
+
+                                  <ListItemText primary="Shape" />
+                                  {open4 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open4} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                              {/* <StarBorder /> */}
+                                          </ListItemIcon>
+                                          {/* <ListItemText primary="Starred" />
+                                              <ListItemText primary="Starred" /> */}
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick5}>
+
+                                  <ListItemText primary="Color" />
+                                  {open5 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open5} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                              {/* <StarBorder /> */}
+                                          </ListItemIcon>
+                                          {/* <ListItemText primary="Starred" />
+                                              <ListItemText primary="Starred" /> */}
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick6}>
+
+                                  <ListItemText primary="Price" />
+                                  {open6 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open6} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                              {/* <StarBorder /> */}
+                                          </ListItemIcon>
+                                          {/* <ListItemText primary="Starred" />
+                                              <ListItemText primary="Starred" /> */}
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              {/* ------------------------------------------------------------------- */}
+                          </List>
+                      </div>
+                      <div className='filtr-help'>
+                      <img src={Helpimg} alt='X' className='d-flex w-100' />
+                      </div>
+                    </div>
+                 
+               </div>
+
+              <div className='items-containr'>
+
+              </div>
+
+          </div>
+          <div className='t2'></div>
+
+      </>
+  );
+}
+
+export default Eyeglasses;

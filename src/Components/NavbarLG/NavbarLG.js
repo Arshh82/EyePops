@@ -66,7 +66,7 @@ const NavbarLG = () => {
               </div>
                <Link style={{ textDecoration: 'none' }}>
                <div className='Eyeglass-sec'>
-                 <span>Eyeglasses</span>
+                 <span style={{margin:'2rem 1.5rem 2rem 1.5rem',fontWeight:'500'}} className='P-brand'>Eyeglasses</span>
             <div className='eyeglass-hover-menu'>
               <div className='menu-style1'>
                 <ul style={{ listStyle: 'none', color: 'black', fontWeight: '500' }}>
@@ -74,7 +74,7 @@ const NavbarLG = () => {
                     <div className='style1-top'>Shop</div>
                   </li>
                   <li>
-                    <div  style={{ color: '#D09839' }}>Computer Glasses</div>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div  style={{ color: '#D09839' }}>Computer & Eye Glasses</div></Link>
                   </li>
                   <li>
                     <div>Women`s Eyeglass</div>
@@ -132,9 +132,10 @@ const NavbarLG = () => {
        
                </div>
                </Link>  
-
+               
+               <Link>
                <div className='Sunglass-sec'>
-                 <span>Sunglasses</span>
+                 <span style={{margin:'2rem 1.5rem 2rem 1.5rem',fontWeight:'500'}} className='P-brand'>Sunglasses</span>
                  <div className='eyeglass-hover-menu2'>
               <div className='menu-style1'>
                 <ul style={{ listStyle: 'none', color: 'black', fontWeight: '500' }}>
@@ -195,36 +196,37 @@ const NavbarLG = () => {
             </div>
        
                </div>
+               </Link>
 
-               <div className='Computer-sec'>
-                 <span>Premium Brands</span>
+        <Link>
+        <div className='Brand-sec'>
+          <span style={{margin:'2rem 1.5rem 2rem 1.5rem',fontWeight:'500'}} className='P-brand'>Premium Brands</span>
 
-                 <div className='eyeglass-hover-menu2'>
-
-              <div className='eyeglass-hover-imgfrem2'>
-                <img src={brandmodel1} alt='X' className='imgfrem1s d-flex w-100 h-100' />
-                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Ray Ban</span>
-              </div>
-              <div className='eyeglass-hover-imgfrem2'>
-                <img src={brandmodel2} alt='X' className='imgfrem1s d-flex w-100 h-100' />
-                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Oakley</span>
-              </div>
-              <div className='eyeglass-hover-imgfrem2'>
-                <img src={brandmodel3} alt='X' className='imgfrem1s d-flex w-100 h-100' />
-                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Arnette</span>
-              </div>
-              <div className='eyeglass-hover-imgfrem2'>
-                <img src={brandmodel4} alt='X' className='imgfrem1s d-flex w-100 h-100' />
-                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>Vogue</span>
-              </div>
-              <div className='eyeglass-hover-imgfrem2'>
-                <img src={brandmodel5} alt='X' className='imgfrem1s d-flex w-100 h-100' />
-                <span className='frem1text' style={{color:'black', fontWeight:'700'}}>RFLKT</span>
-              </div>
-
+          <div className='eyeglass-hover-menu2'>
+            <div className='eyeglass-hover-imgfrem2'>
+              <img src={brandmodel1} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+              <span className='frem1text' style={{ color: 'black', fontWeight: '700' }}>Ray Ban</span>
             </div>
-       
-               </div>
+            <div className='eyeglass-hover-imgfrem2'>
+              <img src={brandmodel2} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+              <span className='frem1text' style={{ color: 'black', fontWeight: '700' }}>OAKLEY</span>
+            </div>
+            <div className='eyeglass-hover-imgfrem2'>
+              <img src={brandmodel3} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+              <span className='frem1text' style={{ color: 'black', fontWeight: '700' }}>ARNETTE</span>
+            </div>
+            <div className='eyeglass-hover-imgfrem2'>
+              <img src={brandmodel4} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+              <span className='frem1text' style={{ color: 'black', fontWeight: '700' }}>Vogue</span>
+            </div>
+            <div className='eyeglass-hover-imgfrem2'>
+              <img src={brandmodel5} alt='X' className='imgfrem1s d-flex w-100 h-100' />
+              <span className='frem1text' style={{ color: 'black', fontWeight: '700' }}>RFLKT</span>
+            </div>
+          </div>
+
+        </div>
+        </Link>
 
         <div className='search-sec'>
         <form>

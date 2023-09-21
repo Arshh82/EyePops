@@ -35,16 +35,19 @@
     height: 100%;
     width: auto;
     display: flex;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     font-size: larger;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     float: left;
 }
 .Eyeglass-sec:hover{
     .eyeglass-hover-menu{
         display: block;
+    }
+    .P-brand{
+        color: #D09839;
     }
     
 }
@@ -52,13 +55,22 @@
     .eyeglass-hover-menu2{
         display: block;
     }
+    .P-brand{
+        color: #D09839;
+    }
     
 }
-.Computer-sec:hover{
+.Brand-sec:hover{
     .eyeglass-hover-menu2{
         display: block;
     }
+    .P-brand{
+        color: #D09839;
+    }
 
+}
+.P-brand{
+    color: gray;
 }
 .menu-style1{
     position: relative;
@@ -129,11 +141,11 @@ ul li{
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.671);
     background-color: rgba(255, 255, 255, 0.425);
 }
-.Computer-sec{
+.Brand-sec{
     height: 100%;
     width: auto;
     display: flex;
-    margin-right: 3.5rem;
+    /* margin-right: 3.5rem; */
     font-size: large;
     justify-content: center;
     align-items: center;
@@ -205,7 +217,7 @@ ul li{
 
 /* ------------------------------------------------- */
 @media screen and (max-width: 1380px) {
-    .Eyeglass-sec,.Sunglass-sec,.Computer-sec,.search-sec{
+    .Eyeglass-sec,.Sunglass-sec,.Brand-sec,.search-sec{
         display: none;
     }
     .menu-togle{

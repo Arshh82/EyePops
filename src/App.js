@@ -6,6 +6,7 @@ import NavbarLG from './Components/NavbarLG/NavbarLG';
 import Favorite from './Components/Favorite/Favorite';
 import Signin from './Components/Sign in page/Signin';
 import Footer from './Components/Footer/Footer';
+import Eyeglasses from './Components/Eyeglasses/Eyeglasses';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/cart' element={<Cart />}></Route>
           <Route path='/favorite' element={<Favorite />}></Route>
           <Route path='/signin' element={<Signin />}></Route>
+          <Route path='/eyeglasses' element={<Eyeglasses />}></Route>
         </Routes>
       <Footer />
     </>
