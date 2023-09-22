@@ -24,32 +24,35 @@ import Checkbox from '@mui/material/Checkbox';
 
 const Eyeglasses = () => {
 
-    const [open1, setOpen1] = React.useState(true);
+    const [open1, setOpen1] = React.useState(false);
     const handleClick1 = () => {
         setOpen1(!open1);
     };
-    const [open2, setOpen2] = React.useState(true);
+    const [open2, setOpen2] = React.useState(false);
     const handleClick2 = () => {
         setOpen2(!open2);
     };
-    const [open3, setOpen3] = React.useState(true);
+    const [open3, setOpen3] = React.useState(false);
     const handleClick3 = () => {
         setOpen3(!open3);
     };
-    const [open4, setOpen4] = React.useState(true);
+    const [open4, setOpen4] = React.useState(false);
     const handleClick4 = () => {
         setOpen4(!open4);
     };
-    const [open5, setOpen5] = React.useState(true);
+    const [open5, setOpen5] = React.useState(false);
     const handleClick5 = () => {
         setOpen5(!open5);
     };
-    const [open6, setOpen6] = React.useState(true);
+    const [open6, setOpen6] = React.useState(false);
     const handleClick6 = () => {
         setOpen6(!open6);
     };
 
-    let Helpimg = new URL ("/public/Images/help.png",import.meta.url) 
+    let Helpimg = new URL ("/public/Images/help.png",import.meta.url)
+
+    // let ItemPoster1 = new URL ("/public/Images/EyeGlassItemPAge/poster1Eyeglass.avif",import.meta.url) 
+
 
   return (
       <>
@@ -219,8 +222,27 @@ const Eyeglasses = () => {
                     </div>
                  
                </div>
-
+{/* -------------------------------------- */}
               <div className='items-containr'>
+                <div className='itemShortOption'>
+
+                </div>
+
+                <div className='itemPoster'>
+
+                </div>
+                
+                <div className='akdv'>
+                <div className='EyeItemsCard'>
+
+                </div>
+                <div className='EyeItemsCard'>
+
+                </div>
+                <div className='EyeItemsCard'>
+
+                </div>
+                </div>
 
               </div>
 
