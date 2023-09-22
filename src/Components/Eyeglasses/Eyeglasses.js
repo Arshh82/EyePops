@@ -16,14 +16,14 @@ import Collapse from '@mui/material/Collapse';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
 
-// import ExpandLess from '@mui/icons-material/ExpandLess';
-// import ExpandMore from '@mui/icons-material/ExpandMore';
-// import StarBorder from '@mui/icons-material/StarBorder';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import {STATUSES,fetchProducts} from '../ReduxComponent/Reducers/productSlice'
+
 
 const Eyeglasses = () => {
-
     const [open1, setOpen1] = React.useState(false);
     const handleClick1 = () => {
         setOpen1(!open1);
@@ -48,6 +48,30 @@ const Eyeglasses = () => {
     const handleClick6 = () => {
         setOpen6(!open6);
     };
+
+    const dispatch = useDispatch();
+    const { data: products, status } = useSelector((state) => state.product);
+  
+    useEffect(() => {
+      dispatch(fetchProducts());
+    }, []);
+  
+    const [term, setTerm] = useState('');
+  
+    const submitHandler = (e) => {
+      e.preventDefault();
+      console.log(term);
+    }
+  
+    if (status === STATUSES.LOADING) {
+      return <h2>Loading....</h2>;
+    }
+  
+    if (status === STATUSES.ERROR) {
+      return <h2>Something went wrong!</h2>;
+    }
+
+   
 
     let Helpimg = new URL ("/public/Images/help.png",import.meta.url)
 
@@ -233,15 +257,24 @@ const Eyeglasses = () => {
                 </div>
                 
                 <div className='akdv'>
-                <div className='EyeItemsCard'>
+                {products.map((v) => {
+                    console.log(v.image)
+            return (
+                <div className='EyeItemsCard' key={v.id}>
+                    <div>
+                        <img src={v.image} className="w-100" alt="X" />
+                    </div>
+                    <div>
+                        <h5 className="mt-2">{v.name}</h5>
+                        <h6 className="mb-2">Size {v.size}</h6>
+                        <h6 className='mb-2'>Rs.{v.amount} <span className='text-muted'>(+GST)</span></h6>
+                    </div>
+
+
 
                 </div>
-                <div className='EyeItemsCard'>
-
-                </div>
-                <div className='EyeItemsCard'>
-
-                </div>
+                
+                )})}
                 </div>
 
               </div>
