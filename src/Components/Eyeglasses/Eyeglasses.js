@@ -23,6 +23,12 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
+
 
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
@@ -54,6 +60,13 @@ const Eyeglasses = () => {
     const handleClick6 = () => {
         setOpen6(!open6);
     };
+
+    const [age, setAge] = React.useState('');
+
+    const handleChange = (event) => {
+      setAge(event.target.value);
+    };
+
 
     const dispatch = useDispatch();
     const { data: products, status } = useSelector((state) => state.product);
@@ -254,9 +267,25 @@ const Eyeglasses = () => {
                </div>
 {/* -------------------------------------- */}
               <div className='items-containr'>
-                <div className='itemShortOption'>
+                  <div className='itemShortOption'>
+                  <div >
+                      <FormControl sx={{ m: 1, minWidth: 140 }} size="small" className='itemShortdivv'>
+                          <InputLabel id="demo-select-large-label" style={{fontWeight:'600'}}>Sort</InputLabel>
+                          <Select
+                              labelId="demo-select-small-label"
+                              id="demo-select-small"
+                              value={age}
+                              label="Age"
+                              onChange={handleChange}
+                          >
+                              <MenuItem value={10}>Price: High to Low</MenuItem>
+                              <MenuItem value={20}>Price: Low to High</MenuItem>
+                              <MenuItem value={30}>Name A to Z</MenuItem>
+                          </Select>
+                      </FormControl>
+                      </div>
 
-                </div>
+                  </div>
 
                 <div className='itemPoster'>
 
@@ -273,7 +302,7 @@ const Eyeglasses = () => {
                                   <div className='ItemDtail'>
                                       <h5 className="mb-1 " style={{fontSize:'1.2rem'}}>{v.name}<br/><TbCurrencyRupee style={{margin:'-5 -2 -2 -2'}} />{v.price} <span className='text-muted' style={{fontSize:'medium'}}>(+GST)</span></h5>
                                       <h6 className="mb-0">Size {v.size}</h6>
-                                      <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'red',margin:'2px'}} />:'B'}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]}</span><span>{v.color[4]}</span>
+                                      <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'7f1a1a',margin:'2px'}} />:'B'}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]==='white'?<FaCircle style={{color:'white',margin:'2px'}} />:''}</span>
                                       <div ><button className='buybtn'>Buy Now</button></div>
                                   </div>
                               </div>
