@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom';
 
 import { TbMathGreater } from "react-icons/tb";
 import { HiPlus,HiMinusSm } from "react-icons/hi";
+import { TbCurrencyRupee } from "react-icons/tb";
+import { FaCircle } from "react-icons/fa";
+
+
+
+
 
 
 
@@ -63,13 +69,13 @@ const Eyeglasses = () => {
       console.log(term);
     }
   
-    if (status === STATUSES.LOADING) {
-      return <h2>Loading....</h2>;
-    }
+    // if (status === STATUSES.LOADING) {
+    //   return <h2>Loading....</h2>;
+    // }
   
-    if (status === STATUSES.ERROR) {
-      return <h2>Something went wrong!</h2>;
-    }
+    // if (status === STATUSES.ERROR) {
+    //   return <h2>Something went wrong!</h2>;
+    // }
 
    
 
@@ -257,24 +263,23 @@ const Eyeglasses = () => {
                 </div>
                 
                 <div className='akdv'>
-                {products.map((v) => {
-                    console.log(v.image)
-            return (
-                <div className='EyeItemsCard' key={v.id}>
-                    <div>
-                        <img src={v.image} className="w-100" alt="X" />
-                    </div>
-                    <div>
-                        <h5 className="mt-2">{v.name}</h5>
-                        <h6 className="mb-2">Size {v.size}</h6>
-                        <h6 className='mb-2'>Rs.{v.amount} <span className='text-muted'>(+GST)</span></h6>
-                    </div>
+                      {products.map((v) => {
+                          console.log(v.image)
+                          return (
+                              <div className='EyeItemsCard' key={v.id}>
+                                  <div className='EyeItemsCardImage'>
+                                      <img src={v.image} className="w-100" alt="X" />
+                                  </div>
+                                  <div className='ItemDtail'>
+                                      <h5 className="mb-1 " style={{fontSize:'1.2rem'}}>{v.name}<br/><TbCurrencyRupee style={{margin:'-5 -2 -2 -2'}} />{v.price} <span className='text-muted' style={{fontSize:'medium'}}>(+GST)</span></h5>
+                                      <h6 className="mb-0">Size {v.size}</h6>
+                                      <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'red',margin:'2px'}} />:'B'}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]}</span><span>{v.color[4]}</span>
+                                      <div ><button className='buybtn'>Buy Now</button></div>
+                                  </div>
+                              </div>
 
-
-
-                </div>
-                
-                )})}
+                          )
+                      })}
                 </div>
 
               </div>

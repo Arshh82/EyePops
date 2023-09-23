@@ -58,7 +58,7 @@
     min-height: 90rem;
     max-height: auto;
     position: relative;
-    background-color: purple;
+    background-color: rgb(255, 255, 255);
 }
 .itemShortOption{
     width: 100%;
@@ -81,9 +81,37 @@
 .EyeItemsCard{
     margin: 1rem 1rem 1rem 0rem ;
     width: 30%;
-    height: 26rem;
+    height: 24.5rem;
     /* float: left; */
-    background-color: rgb(255, 88, 88);
+    background-color: #F6F6F6;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.EyeItemsCardImage{
+    width: 100%;
+    height:15rem ;
+    background-color: white;
+}
+.ItemDtail{
+    width: 100%;
+    height: 9.5rem;
+    padding: 0.5rem;
+    /* background-color: red; */
+    position: relative;
+    align-items: end;
+
+}
+.buybtn{
+    position: absolute;
+    width: 6rem;
+    height: 2rem;
+    right: 0.5rem;
+    border-style: groove;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 1px;
+    font-weight: 600;
+    
+
 }
 .akdv{
     display: flex;
