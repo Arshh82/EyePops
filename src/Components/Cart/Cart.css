@@ -1,0 +1,43 @@
+.cartContainer1{
+    width: 100%;
+    min-height: 100rem;
+    max-height: auto;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.cartItemsSection{
+    position: relative;
+    width: 200rem;
+    min-height: 100rem;
+    max-height: auto;
+    background-color: white;
+}
+.cartTotalSection{
+    width: 100%;
+    min-height: 100rem;
+    max-height: auto;
+    background-color:#ECECEC;
+    
+}
+.totalContainer{
+    width: 22rem;
+    height: 60rem;
+    margin: 5rem 2rem 2rem 4rem;
+    /* background-color: red; */
+}
+.amt{
+    float: right;
+    position: relative;
+}
+.cartBtn{
+    width: 100%;
+    height: 3rem;
+    background-color:#D39D4E;
+    color: white;
+    border-style: groove;
+    border-width: 0;
+    border-radius: 4px;
+    margin-top: 3.5rem;
+}

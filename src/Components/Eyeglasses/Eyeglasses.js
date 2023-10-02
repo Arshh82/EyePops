@@ -568,7 +568,6 @@ const Eyeglasses = () => {
                           </List>
                       </Collapse>
                   </list>
-                  <hr></hr>
 
               </div>
 
