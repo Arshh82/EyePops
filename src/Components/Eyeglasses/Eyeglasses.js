@@ -1,6 +1,6 @@
 import React from 'react';
 import './Eyeglasses.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { TbMathGreater } from "react-icons/tb";
 import { HiPlus,HiMinusSm } from "react-icons/hi";
@@ -34,6 +34,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import {STATUSES,fetchProducts} from '../ReduxComponent/Reducers/productSlice'
 import ProductAnimation from '../LoadingAnimations/ProductAnimation';
+
+import { addToCart } from '../ReduxComponent/Reducers/cartSlice';
 
 
 const Eyeglasses = () => {
@@ -93,11 +95,16 @@ const Eyeglasses = () => {
     const handleChange = (event) => {
       setAge(event.target.value);
     };
+    
+
+    const [qty, setQty] = useState(1);
 
 
     const dispatch = useDispatch();
     const { data: products, status } = useSelector((state) => state.product);
   
+    let navigate = useNavigate();
+     
     useEffect(() => {
       dispatch(fetchProducts());
     }, []);
@@ -108,6 +115,17 @@ const Eyeglasses = () => {
       e.preventDefault();
       console.log(term);
     }
+
+      const addToCartHandler = (product) => {
+    let totalPrice = qty * product.price;
+    const tempProduct = {
+      ...product,
+      quantity: qty,
+      totalPrice
+    }
+    dispatch(addToCart(tempProduct));
+    navigate('/cart');
+  };
   
     // if (status === STATUSES.LOADING) {
     //   return <h2>Loading....</h2>;
@@ -462,7 +480,7 @@ const Eyeglasses = () => {
                                       <h5 className="mb-1 " style={{fontSize:'1.2rem'}}>{v.name}<br/><TbCurrencyRupee style={{margin:'-5 -2 -2 -2'}} />{v.price} <span className='text-muted' style={{fontSize:'medium'}}>(+GST)</span></h5>
                                       <h6 className="mb-0">Size {v.size}</h6>
                                       <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'7f1a1a',margin:'2px'}} />:''}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]==='white'?<FaCircle style={{color:'white',margin:'2px',borderStyle:'groove',borderColor:'black',borderWidth:'1px',borderRadius:'10px'}} />:''}</span>
-                                      <div ><button className='buybtn'>Buy Now</button></div>
+                                      <div ><button className='buybtn'onClick={() => addToCartHandler(v)} >Buy Now</button></div>
                                   </div>
                               </div>
                                  )})}

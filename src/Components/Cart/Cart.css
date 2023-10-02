@@ -12,6 +12,10 @@
     width: 200rem;
     min-height: 100rem;
     max-height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
     background-color: white;
 }
 .cartTotalSection{
@@ -40,4 +44,31 @@
     border-width: 0;
     border-radius: 4px;
     margin-top: 3.5rem;
+}
+.cartItemdiv{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 2rem;
+    height: 20rem;
+    background-color: brown;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.cartitem-pic{
+    float: left;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+}
+.cartItem-detal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(212, 212, 212);
+
 }
