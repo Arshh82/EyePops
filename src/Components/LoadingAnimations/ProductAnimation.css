@@ -1,0 +1,16 @@
+.patext{
+    width: 10rem;
+    height: 2rem;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+.bybtn{
+    position: absolute;
+    width: 6rem;
+    height: 2rem;
+    right: 0.5rem;
+    background-color: rgb(204, 204, 204);
+    border-style: none;
+    border-radius: 15px;
+}

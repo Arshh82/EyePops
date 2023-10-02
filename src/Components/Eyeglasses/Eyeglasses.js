@@ -33,6 +33,7 @@ import Select from '@mui/material/Select';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import {STATUSES,fetchProducts} from '../ReduxComponent/Reducers/productSlice'
+import ProductAnimation from '../LoadingAnimations/ProductAnimation';
 
 
 const Eyeglasses = () => {
@@ -282,15 +283,147 @@ const Eyeglasses = () => {
               <div className='items-containr'>
                   <div className='itemShortOption'>
                       <div className='Item-filter-tgle'>
-                          <button style={{borderStyle:'none',backgroundColor:'none'}} onClick={handleShow}><h5 style={{color:'grey'}} >Filter <LuSettings2 /></h5></button>
+                          <button style={{borderStyle:'none',backgroundColor:'white'}} onClick={handleShow}><h5 style={{color:'grey'}} >Filter <LuSettings2 /></h5></button>
                       </div>
                       <div >
                           <Offcanvas show={show} onHide={handleClose} className="sm">
                               <Offcanvas.Header closeButton>
-                                  <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                                  <Offcanvas.Title>Filter</Offcanvas.Title>
                               </Offcanvas.Header>
                               <Offcanvas.Body>
-                                  Some text
+                              <div>
+                          <List sx={{ width: '100%' }}
+                              aria-labelledby="nested-list-subheader">
+                              <ListItemButton onClick={handleClick1}>
+
+                                  <ListItemText primary="Gender" />
+                                  {open1 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open1} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick2}>
+
+                                  <ListItemText primary="Brand" />
+                                  {open2 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open2} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Ray-Ban" />
+                                              <FormControlLabel control={<Checkbox />} label="Oakley" />
+                                              <FormControlLabel control={<Checkbox />} label="ARNETTE" />
+                                              <FormControlLabel control={<Checkbox />} label="RFLKT" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick3}>
+
+                                  <ListItemText primary="Size" />
+                                  {open3 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open3} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Large" />
+                                              <FormControlLabel control={<Checkbox />} label="Medium" />
+                                              <FormControlLabel control={<Checkbox />} label="Small" />
+                                              <FormControlLabel control={<Checkbox />} label="Extra Small" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick4}>
+
+                                  <ListItemText primary="Shape" />
+                                  {open4 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open4} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Rectangle" />
+                                              <FormControlLabel control={<Checkbox />} label="Oval" />
+                                              <FormControlLabel control={<Checkbox />} label="AViator" />
+                                              <FormControlLabel control={<Checkbox />} label="Heart" />
+                                              <FormControlLabel control={<Checkbox />} label="Square" />
+                                              <FormControlLabel control={<Checkbox />} label="Round" />
+                                              <FormControlLabel control={<Checkbox />} label="Horn" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick5}>
+
+                                  <ListItemText primary="Color" />
+                                  {open5 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open5} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'7f1a1a',margin:'2px'}} /> />
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'Blue',margin:'2px'}} /> />
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'Black',margin:'2px'}} /> />
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'White',margin:'2px',borderStyle:'groove',borderColor:'black',borderWidth:'1px',borderRadius:'10px'}} /> />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick6}>
+
+                                  <ListItemText primary="Price" />
+                                  {open6 ? <HiMinusSm /> : <HiPlus />}
+                              </ListItemButton>
+                              <Collapse in={open6} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Men" />
+                                              <FormControlLabel control={<Checkbox />} label="Women" />
+                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
+                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              {/* ------------------------------------------------------------------- */}
+                          </List>
+                      </div>
                               </Offcanvas.Body>
                           </Offcanvas>
                       </div>
@@ -317,7 +450,8 @@ const Eyeglasses = () => {
                 </div>
                 
                 <div className='akdv'>
-                      {products.map((v) => {
+                      {status === STATUSES.LOADING ?<ProductAnimation/>:products.map((v) => {
+                        
                           return (
                               <div className='EyeItemsCard' key={v.id}>
                                   <div className='EyeItemsCardImage'>
