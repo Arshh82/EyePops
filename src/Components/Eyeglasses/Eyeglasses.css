@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: start;
     flex-direction: row;
+    
 }
 .text-fil{
     position: relative;
@@ -45,10 +46,11 @@
     font-size: large;
 }
 .filter-containr{
-    min-width: 12rem;
+    min-width: 14rem;
     min-height: 33rem;
     max-height: auto;
     z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     background-color: rgb(255, 255, 255);
 }
 /* ---------------------------- */
@@ -58,6 +60,7 @@
     min-height: 90rem;
     max-height: auto;
     position: relative;
+    
     background-color: rgb(255, 255, 255);
 }
 .itemShortOption{

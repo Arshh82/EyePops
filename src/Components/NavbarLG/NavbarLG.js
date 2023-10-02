@@ -12,9 +12,31 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 
 
+import { HiPlus,HiMinusSm } from "react-icons/hi";
+import { RiArrowDownSLine,RiArrowUpSLine} from "react-icons/ri";
+
+
 
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+
+
+
+import List from '@mui/material/List';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Collapse from '@mui/material/Collapse';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
+
+
 
 
 let Logo = new URL ("/public/Images/Navbar-Logo/Brand Lgo.PNG",import.meta.url)
@@ -36,6 +58,19 @@ let brandmodel5 = new URL ("/public/Images/Hover-menu/Brand/Brand-5.avif",import
 
 
 const NavbarLG = () => {
+  const [open1, setOpen1] = React.useState(false);
+  const handleClick1 = () => {
+      setOpen1(!open1);
+  };
+  const [open2, setOpen2] = React.useState(false);
+  const handleClick2 = () => {
+      setOpen2(!open2);
+  };
+  const [open3, setOpen3] = React.useState(false);
+  const handleClick3 = () => {
+      setOpen3(!open3);
+  };
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -54,11 +89,82 @@ const NavbarLG = () => {
               </div>
               <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>
+          <Link to='/' onClick={(()=> setShow(false) )}><img src={Logo} alt='X' className='d-flex w-50 ' /></Link>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+        <div>
+                          <List sx={{ width: '100%' }}
+                              aria-labelledby="nested-list-subheader">
+                              <ListItemButton onClick={handleClick1}>
+                                  <ListItemText primary="Eyeglasses" />
+                                  {open1 ? <RiArrowUpSLine /> : <RiArrowDownSLine/>}
+                              </ListItemButton>
+                              <Collapse in={open1} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup >
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Computer & Eye Glasses" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Women's EyeGlasses" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Men's EyeGlasses" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Kid's EyeGlasses" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="On sale" className='mb-2' /></Link>
+                                              
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick2}>
+
+                                  <ListItemText primary="Sunglasses" />
+                                  {open2 ?  <RiArrowUpSLine /> : <RiArrowDownSLine/>}
+                              </ListItemButton>
+                              <Collapse in={open2} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Ray-Ban" />
+                                              <FormControlLabel control={<Checkbox />} label="Oakley" />
+                                              <FormControlLabel control={<Checkbox />} label="ARNETTE" />
+                                              <FormControlLabel control={<Checkbox />} label="RFLKT" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              <ListItemButton onClick={handleClick3}>
+
+                                  <ListItemText primary="Premium Brands" />
+                                  {open3 ?  <RiArrowUpSLine /> : <RiArrowDownSLine/>}
+                              </ListItemButton>
+                              <Collapse in={open3} timeout="auto" unmountOnExit>
+                                  <List component="div" disablePadding>
+                                      <ListItemButton >
+                                          <ListItemIcon>
+                                          </ListItemIcon>
+                                          <FormGroup>
+                                              <FormControlLabel control={<Checkbox />} label="Large" />
+                                              <FormControlLabel control={<Checkbox />} label="Medium" />
+                                              <FormControlLabel control={<Checkbox />} label="Small" />
+                                              <FormControlLabel control={<Checkbox />} label="Extra Small" />
+                                          </FormGroup>
+                                      </ListItemButton>
+                                  </List>
+                              </Collapse>
+                              <hr></hr>
+                              {/* ------------------------------------------------------------------- */}
+                              
+                          </List>
+                      </div>
+          
         </Offcanvas.Body>
       </Offcanvas>
 
