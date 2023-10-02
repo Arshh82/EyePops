@@ -6,6 +6,9 @@ import { TbMathGreater } from "react-icons/tb";
 import { HiPlus,HiMinusSm } from "react-icons/hi";
 import { TbCurrencyRupee } from "react-icons/tb";
 import { FaCircle } from "react-icons/fa";
+import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
+
+
 
 
 
@@ -59,6 +62,26 @@ const Eyeglasses = () => {
     const [open6, setOpen6] = React.useState(false);
     const handleClick6 = () => {
         setOpen6(!open6);
+    };
+    const [open7, setOpen7] = React.useState(false);
+    const handleClick7 = () => {
+        setOpen7(!open7);
+    };
+    const [open8, setOpen8] = React.useState(false);
+    const handleClick8 = () => {
+        setOpen8(!open8);
+    };
+    const [open9, setOpen9] = React.useState(false);
+    const handleClick9 = () => {
+        setOpen9(!open9);
+    };
+    const [open10, setOpen10] = React.useState(false);
+    const handleClick10 = () => {
+        setOpen10(!open10);
+    };
+    const [open11, setOpen11] = React.useState(false);
+    const handleClick11 = () => {
+        setOpen11(!open11);
     };
 
     const [age, setAge] = React.useState('');
@@ -128,10 +151,7 @@ const Eyeglasses = () => {
                                   <List component="div" disablePadding>
                                       <ListItemButton >
                                           <ListItemIcon>
-                                              {/* <StarBorder /> */}
                                           </ListItemIcon>
-                                          {/* <ListItemText primary="Starred" />
-                                              <ListItemText primary="Starred" /> */}
                                           <FormGroup>
                                               <FormControlLabel control={<Checkbox />} label="Men" />
                                               <FormControlLabel control={<Checkbox />} label="Women" />
@@ -151,15 +171,12 @@ const Eyeglasses = () => {
                                   <List component="div" disablePadding>
                                       <ListItemButton >
                                           <ListItemIcon>
-                                              {/* <StarBorder /> */}
                                           </ListItemIcon>
-                                          {/* <ListItemText primary="Starred" />
-                                              <ListItemText primary="Starred" /> */}
                                           <FormGroup>
-                                              <FormControlLabel control={<Checkbox />} label="Men" />
-                                              <FormControlLabel control={<Checkbox />} label="Women" />
-                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
-                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                              <FormControlLabel control={<Checkbox />} label="Ray-Ban" />
+                                              <FormControlLabel control={<Checkbox />} label="Oakley" />
+                                              <FormControlLabel control={<Checkbox />} label="ARNETTE" />
+                                              <FormControlLabel control={<Checkbox />} label="RFLKT" />
                                           </FormGroup>
                                       </ListItemButton>
                                   </List>
@@ -174,15 +191,12 @@ const Eyeglasses = () => {
                                   <List component="div" disablePadding>
                                       <ListItemButton >
                                           <ListItemIcon>
-                                              {/* <StarBorder /> */}
                                           </ListItemIcon>
-                                          {/* <ListItemText primary="Starred" />
-                                              <ListItemText primary="Starred" /> */}
                                           <FormGroup>
-                                              <FormControlLabel control={<Checkbox />} label="Men" />
-                                              <FormControlLabel control={<Checkbox />} label="Women" />
-                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
-                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                              <FormControlLabel control={<Checkbox />} label="Large" />
+                                              <FormControlLabel control={<Checkbox />} label="Medium" />
+                                              <FormControlLabel control={<Checkbox />} label="Small" />
+                                              <FormControlLabel control={<Checkbox />} label="Extra Small" />
                                           </FormGroup>
                                       </ListItemButton>
                                   </List>
@@ -197,15 +211,15 @@ const Eyeglasses = () => {
                                   <List component="div" disablePadding>
                                       <ListItemButton >
                                           <ListItemIcon>
-                                              {/* <StarBorder /> */}
                                           </ListItemIcon>
-                                          {/* <ListItemText primary="Starred" />
-                                              <ListItemText primary="Starred" /> */}
                                           <FormGroup>
-                                              <FormControlLabel control={<Checkbox />} label="Men" />
-                                              <FormControlLabel control={<Checkbox />} label="Women" />
-                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
-                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                              <FormControlLabel control={<Checkbox />} label="Rectangle" />
+                                              <FormControlLabel control={<Checkbox />} label="Oval" />
+                                              <FormControlLabel control={<Checkbox />} label="AViator" />
+                                              <FormControlLabel control={<Checkbox />} label="Heart" />
+                                              <FormControlLabel control={<Checkbox />} label="Square" />
+                                              <FormControlLabel control={<Checkbox />} label="Round" />
+                                              <FormControlLabel control={<Checkbox />} label="Horn" />
                                           </FormGroup>
                                       </ListItemButton>
                                   </List>
@@ -220,15 +234,12 @@ const Eyeglasses = () => {
                                   <List component="div" disablePadding>
                                       <ListItemButton >
                                           <ListItemIcon>
-                                              {/* <StarBorder /> */}
                                           </ListItemIcon>
-                                          {/* <ListItemText primary="Starred" />
-                                              <ListItemText primary="Starred" /> */}
                                           <FormGroup>
-                                              <FormControlLabel control={<Checkbox />} label="Men" />
-                                              <FormControlLabel control={<Checkbox />} label="Women" />
-                                              <FormControlLabel control={<Checkbox />} label="Unisex" />
-                                              <FormControlLabel control={<Checkbox />} label="Kids" />
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'7f1a1a',margin:'2px'}} /> />
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'Blue',margin:'2px'}} /> />
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'Black',margin:'2px'}} /> />
+                                              <FormControlLabel control={<Checkbox />} label=<FaCircle style={{color:'White',margin:'2px',borderStyle:'groove',borderColor:'black',borderWidth:'1px',borderRadius:'10px'}} /> />
                                           </FormGroup>
                                       </ListItemButton>
                                   </List>
@@ -243,10 +254,7 @@ const Eyeglasses = () => {
                                   <List component="div" disablePadding>
                                       <ListItemButton >
                                           <ListItemIcon>
-                                              {/* <StarBorder /> */}
                                           </ListItemIcon>
-                                          {/* <ListItemText primary="Starred" />
-                                              <ListItemText primary="Starred" /> */}
                                           <FormGroup>
                                               <FormControlLabel control={<Checkbox />} label="Men" />
                                               <FormControlLabel control={<Checkbox />} label="Women" />
@@ -263,7 +271,6 @@ const Eyeglasses = () => {
                       <img src={Helpimg} alt='X' className='d-flex w-100' />
                       </div>
                     </div>
-                 
                </div>
 {/* -------------------------------------- */}
               <div className='items-containr'>
@@ -284,11 +291,9 @@ const Eyeglasses = () => {
                           </Select>
                       </FormControl>
                       </div>
-
                   </div>
 
                 <div className='itemPoster'>
-
                 </div>
                 
                 <div className='akdv'>
@@ -302,19 +307,118 @@ const Eyeglasses = () => {
                                   <div className='ItemDtail'>
                                       <h5 className="mb-1 " style={{fontSize:'1.2rem'}}>{v.name}<br/><TbCurrencyRupee style={{margin:'-5 -2 -2 -2'}} />{v.price} <span className='text-muted' style={{fontSize:'medium'}}>(+GST)</span></h5>
                                       <h6 className="mb-0">Size {v.size}</h6>
-                                      <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'7f1a1a',margin:'2px'}} />:'B'}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]==='white'?<FaCircle style={{color:'white',margin:'2px'}} />:''}</span>
+                                      <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'7f1a1a',margin:'2px'}} />:''}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]==='white'?<FaCircle style={{color:'white',margin:'2px',borderStyle:'groove',borderColor:'black',borderWidth:'1px',borderRadius:'10px'}} />:''}</span>
                                       <div ><button className='buybtn'>Buy Now</button></div>
                                   </div>
                               </div>
-
-                          )
-                      })}
+                                 )})}
                 </div>
+              </div>
+          </div>
+
+          <div className='containr-2 mt-5'>
+              <div className='containr-2-text mt-5'>
+                  <h1 >Worry-Free Shopping</h1>
+                  <span>To make sure you’re completely happy with your purchase, we offer a 14-Day Fit and Style Guarantee, and a 12-Month Guarantee overall, with every online prescription glasses order. If you have any questions about entering your eyeglass prescription information, get in touch with our expert customer service team any time. We’re always happy to help!</span>
+              </div>
+          </div>
+
+          <div className='containr-3 mt-5'>
+              <div className='containr-3-text mt-5'>
+                  <h1 className='mb-4'>FAQ</h1>
+                  <list sx={{ width: '100%' }}
+                      aria-labelledby="nested-list-subheader">
+                      <ListItemButton onClick={handleClick7}>
+                          <h5 style={{marginRight:'1rem',fontWeight:'500'}}>What are optical glasses ? </h5>
+                          {open7 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                      </ListItemButton>
+                      <Collapse in={open7} timeout="auto" unmountOnExit>
+                          <List component="div" disablePadding>
+                              <ListItemButton >
+                                  <span>
+                                  Optical glasses, or prescription glasses, are specifically designed to help people who have vision trouble see better. These frames manipulate light to focus on the retina in the eye, which allows for clearer vision with the appropriate prescriptions. Optical glasses also help in the correction of other vision problems like myopia, hyperopia, and astigmatism.
+                                  </span>
+                              </ListItemButton>
+                          </List>
+                      </Collapse>
+                  </list>
+                  <hr></hr>
+
+                  <list sx={{ width: '100%' }}
+                      aria-labelledby="nested-list-subheader">
+                      <ListItemButton onClick={handleClick8}>
+                          <h5 style={{marginRight:'1rem',fontWeight:'500'}}>How much are eyeglasses ? </h5>
+                          {open8 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                      </ListItemButton>
+                      <Collapse in={open8} timeout="auto" unmountOnExit>
+                          <List component="div" disablePadding>
+                              <ListItemButton >
+                                  <span>
+                                  Prices vary greatly based on the kind of frame, lenses, and retailer. Luckily at Eyepops, we offer affordable options for every budget, with frames starting at just Rs.1000!
+                                   </span>
+                              </ListItemButton>
+                          </List>
+                      </Collapse>
+                  </list>
+                  <hr></hr>
+
+                  <list sx={{ width: '100%' }}
+                      aria-labelledby="nested-list-subheader">
+                      <ListItemButton onClick={handleClick9}>
+                          <h5 style={{marginRight:'1rem',fontWeight:'500'}}>Where to get eyeglasses </h5>
+                          {open9 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                      </ListItemButton>
+                      <Collapse in={open9} timeout="auto" unmountOnExit>
+                          <List component="div" disablePadding>
+                              <ListItemButton >
+                                  <span>
+                                  eyepops can save you hundreds of rupees when purchasing prescription glasses online. We offer a variety of styles, as well as multiple lens options, at an affordable price — without compromising the quality of your glasses! On top of that, we provide a 365-Day Guarantee and 14-Day Free Returns policy.
+                                  </span>
+                              </ListItemButton>
+                          </List>
+                      </Collapse>
+                  </list>
+                  <hr></hr>
+
+                  <list sx={{ width: '100%' }}
+                      aria-labelledby="nested-list-subheader">
+                      <ListItemButton onClick={handleClick10}>
+                          <h5 style={{marginRight:'1rem',fontWeight:'500'}}>How much do eyeglasses cost ? </h5>
+                          {open10 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                      </ListItemButton>
+                      <Collapse in={open10} timeout="auto" unmountOnExit>
+                          <List component="div" disablePadding>
+                              <ListItemButton >
+                                  <span>
+                                  At Eyepops, we offer frames starting at Rs.600 per pair, while our most popular frames range from Rs.3200 to Rs.5500. If you’re looking to add prescription lenses, we offer options starting at Rs2000.
+                                  </span>
+                              </ListItemButton>
+                          </List>
+                      </Collapse>
+                  </list>
+                  <hr></hr>
+
+                  <list sx={{ width: '100%' }}
+                      aria-labelledby="nested-list-subheader">
+                      <ListItemButton onClick={handleClick11}>
+                          <h5 style={{marginRight:'1rem',fontWeight:'500'}}>How should eyeglasses fit ? </h5>
+                          {open11 ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                      </ListItemButton>
+                      <Collapse in={open11} timeout="auto" unmountOnExit>
+                          <List component="div" disablePadding>
+                              <ListItemButton >
+                                  <span>
+                                  Take our fun Fit & Style Quiz to find out which styles will best suit you! We'll handpick an exclusive range of frames curated just for you, to help you find your perfect pair.
+                                  </span>
+                              </ListItemButton>
+                          </List>
+                      </Collapse>
+                  </list>
+                  <hr></hr>
 
               </div>
 
           </div>
-          <div className='t2'></div>
 
       </>
   );
