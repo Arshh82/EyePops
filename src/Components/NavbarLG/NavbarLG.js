@@ -14,6 +14,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 
 let Logo = new URL ("/public/Images/Navbar-Logo/Brand Lgo.PNG",import.meta.url)
@@ -39,6 +40,8 @@ const NavbarLG = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const {data} = useSelector(state => state.cart);
+
 
   return (
     <>
@@ -241,7 +244,7 @@ const NavbarLG = () => {
               <div className='LG-Navbar-secB'>
                   <Link to='/signin' style={{ textDecoration: 'none' }}><div className='login-butn'>Sign in <IoIosArrowDown style={{fontSize:'1.5rem'}} /></div></Link>
                   <Link to='/favorite' className='llink' style={{ textDecoration: 'none' }}> <AiOutlineHeart className='Logo-togle' id='fav' /></Link>
-                  <Link to='/cart' className='llink' style={{ textDecoration: 'none' }}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>10</div>
+                  <Link to='/cart' className='llink' style={{ textDecoration: 'none' }}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>{data.length}</div>
                   
               </div>
 

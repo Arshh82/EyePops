@@ -72,3 +72,25 @@
     background-color: rgb(212, 212, 212);
 
 }
+.emptyCartcat{
+    width: 70%;
+    height: 25rem;
+    position: relative;
+    left: -8rem;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: pink; */
+}
+.emptbtn{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2rem;
+    background-color:#D39D4E;
+    color: white;
+    border-style: groove;
+    border-width: 0;
+    border-radius: 4px;
+}

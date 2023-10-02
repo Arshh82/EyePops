@@ -117,16 +117,28 @@
 }
 .buybtn{
     position: absolute;
-    width: 6rem;
+    width: 8rem;
     height: 2rem;
     right: 0.5rem;
     border-style: groove;
-    border-radius: 15px;
-    border-color: black;
-    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(143, 143, 143);
+    border-width: 0.5px;
     font-weight: 600;
     
 
+}
+.favbtn{
+    position: absolute;
+    z-index: 5;
+    right: 0.5rem;
+    bottom: 1rem;
+    border-style: none;
+    font-size: 1.5rem;
+    background-color: #f6ebdc00;
+}
+.favbtn:hover{
+    color: rgb(173, 16, 16);
 }
 .akdv{
     display: flex;
@@ -165,6 +177,7 @@
         height: 8rem;
         /* background-color: blue; */
     }
+    
     .Item-filter-tgle{
         display: block;
         width: 6rem;
@@ -196,6 +209,11 @@
         position: relative;
         bottom: -15rem;
     }
+    .favbtn{
+        font-size: 2rem;
+        right: 2rem;
+        bottom: -12rem;
+    }
  
 }
 @media screen and (max-width: 768px) {
@@ -219,6 +237,9 @@
     .ItemDtail{
         position: relative;
         bottom: -0.5rem;
+    }
+    .favbtn{
+        bottom: -5rem;
     }
  
     

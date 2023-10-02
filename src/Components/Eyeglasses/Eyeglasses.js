@@ -5,9 +5,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import { TbMathGreater } from "react-icons/tb";
 import { HiPlus,HiMinusSm } from "react-icons/hi";
 import { TbCurrencyRupee } from "react-icons/tb";
-import { FaCircle } from "react-icons/fa";
+import { FaCircle,FaHeart } from "react-icons/fa";
 import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
 import {LuSettings2} from "react-icons/lu";
+import {BiHeart} from "react-icons/bi";
 
 
 
@@ -473,6 +474,7 @@ const Eyeglasses = () => {
                           return (
                               <div className='EyeItemsCard' key={v.id}>
                                   <div className='EyeItemsCardImage'>
+                                  <div ><button className='favbtn' ><FaHeart/></button></div>
                                       <img src={v.image2} className="img2 w-100" alt="X" />
                                       <img src={v.image} className="img1 w-100" alt="X" />
                                   </div>
@@ -480,7 +482,7 @@ const Eyeglasses = () => {
                                       <h5 className="mb-1 " style={{fontSize:'1.2rem'}}>{v.name}<br/><TbCurrencyRupee style={{margin:'-5 -2 -2 -2'}} />{v.price} <span className='text-muted' style={{fontSize:'medium'}}>(+GST)</span></h5>
                                       <h6 className="mb-0">Size {v.size}</h6>
                                       <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'7f1a1a',margin:'2px'}} />:''}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]==='white'?<FaCircle style={{color:'white',margin:'2px',borderStyle:'groove',borderColor:'black',borderWidth:'1px',borderRadius:'10px'}} />:''}</span>
-                                      <div ><button className='buybtn'onClick={() => addToCartHandler(v)} >Buy Now</button></div>
+                                      <div ><button className='buybtn'onClick={() => addToCartHandler(v)} >Add to Cart</button></div>
                                   </div>
                               </div>
                                  )})}
