@@ -7,13 +7,11 @@ import { HiPlus,HiMinusSm } from "react-icons/hi";
 import { TbCurrencyRupee } from "react-icons/tb";
 import { FaCircle } from "react-icons/fa";
 import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
+import {LuSettings2} from "react-icons/lu";
 
 
 
-
-
-
-
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 
@@ -25,7 +23,6 @@ import Collapse from '@mui/material/Collapse';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -39,6 +36,12 @@ import {STATUSES,fetchProducts} from '../ReduxComponent/Reducers/productSlice'
 
 
 const Eyeglasses = () => {
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+
     const [open1, setOpen1] = React.useState(false);
     const handleClick1 = () => {
         setOpen1(!open1);
@@ -137,6 +140,9 @@ const Eyeglasses = () => {
               <div className='filter-containr sticky-top'>
               <div>
                 <span className='text-fil'>Filters</span>
+              </div>
+              <div>
+
               </div>
                   <div className='mt-5'>
                       <div>
@@ -275,22 +281,36 @@ const Eyeglasses = () => {
 {/* -------------------------------------- */}
               <div className='items-containr'>
                   <div className='itemShortOption'>
-                  <div >
-                      <FormControl sx={{ m: 1, minWidth: 140 }} size="small" className='itemShortdivv'>
-                          <InputLabel id="demo-select-large-label" style={{fontWeight:'600'}}>Sort</InputLabel>
-                          <Select
-                              labelId="demo-select-small-label"
-                              id="demo-select-small"
-                              value={age}
-                              label="Age"
-                              onChange={handleChange}
-                          >
-                              <MenuItem value={10}>Price: High to Low</MenuItem>
-                              <MenuItem value={20}>Price: Low to High</MenuItem>
-                              <MenuItem value={30}>Name A to Z</MenuItem>
-                          </Select>
-                      </FormControl>
+                      <div className='Item-filter-tgle'>
+                          <button style={{borderStyle:'none',backgroundColor:'none'}} onClick={handleShow}><h5 style={{color:'grey'}} >Filter <LuSettings2 /></h5></button>
                       </div>
+                      <div >
+                          <Offcanvas show={show} onHide={handleClose} className="sm">
+                              <Offcanvas.Header closeButton>
+                                  <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                              </Offcanvas.Header>
+                              <Offcanvas.Body>
+                                  Some text
+                              </Offcanvas.Body>
+                          </Offcanvas>
+                      </div>
+                      <div >
+                          <FormControl sx={{ m: 1, minWidth: 140 }} size="small" className='itemShortdivv'>
+                              <InputLabel id="demo-select-large-label" style={{ fontWeight: '600' }}>Sort</InputLabel>
+                              <Select
+                                  labelId="demo-select-small-label"
+                                  id="demo-select-small"
+                                  value={age}
+                                  label="Age"
+                                  onChange={handleChange}
+                              >
+                                  <MenuItem value={10}>Price: High to Low</MenuItem>
+                                  <MenuItem value={20}>Price: Low to High</MenuItem>
+                                  <MenuItem value={30}>Name A to Z</MenuItem>
+                              </Select>
+                          </FormControl>
+                      </div>
+
                   </div>
 
                 <div className='itemPoster'>
@@ -298,11 +318,11 @@ const Eyeglasses = () => {
                 
                 <div className='akdv'>
                       {products.map((v) => {
-                          console.log(v.image)
                           return (
                               <div className='EyeItemsCard' key={v.id}>
                                   <div className='EyeItemsCardImage'>
-                                      <img src={v.image} className="w-100" alt="X" />
+                                      <img src={v.image2} className="img2 w-100" alt="X" />
+                                      <img src={v.image} className="img1 w-100" alt="X" />
                                   </div>
                                   <div className='ItemDtail'>
                                       <h5 className="mb-1 " style={{fontSize:'1.2rem'}}>{v.name}<br/><TbCurrencyRupee style={{margin:'-5 -2 -2 -2'}} />{v.price} <span className='text-muted' style={{fontSize:'medium'}}>(+GST)</span></h5>
@@ -319,7 +339,7 @@ const Eyeglasses = () => {
           <div className='containr-2 mt-5'>
               <div className='containr-2-text mt-5'>
                   <h1 >Worry-Free Shopping</h1>
-                  <span>To make sure you’re completely happy with your purchase, we offer a 14-Day Fit and Style Guarantee, and a 12-Month Guarantee overall, with every online prescription glasses order. If you have any questions about entering your eyeglass prescription information, get in touch with our expert customer service team any time. We’re always happy to help!</span>
+                  <span>To make sure you're completely happy with your purchase, we offer a 14-Day Fit and Style Guarantee, and a 12-Month Guarantee overall, with every online prescription glasses order. If you have any questions about entering your eyeglass prescription information, get in touch with our expert customer service team any time. We’re always happy to help!</span>
               </div>
           </div>
 

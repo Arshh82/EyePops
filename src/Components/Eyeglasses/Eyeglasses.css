@@ -65,6 +65,9 @@
     height: 5rem;
     /* background-color: blue; */
 }
+.Item-filter-tgle{
+    display: none;
+}
 .itemShortdivv{
     background-color: white;
 }
@@ -92,7 +95,16 @@
 .EyeItemsCardImage{
     width: 100%;
     height:15rem ;
+    position: relative;
     background-color: white;
+}
+.EyeItemsCardImage:hover{
+    .img1{
+        display: none;
+    }
+}
+.img1,.img2{
+    position: absolute;
 }
 .ItemDtail{
     width: 100%;
@@ -134,6 +146,7 @@
     min-height: 10rem;
     max-height: auto;
     margin-bottom: 5rem;
+    padding: 2rem;
 }
 .containr-3{
     width: 100%;
@@ -148,29 +161,64 @@
 
 
 @media screen and (max-width: 1200px) {
+    .itemShortOption{
+        height: 8rem;
+        /* background-color: blue; */
+    }
+    .Item-filter-tgle{
+        display: block;
+        width: 6rem;
+        height: 2rem;
+        margin: 1rem;
+        position: relative;
+        /* background-color: aquamarine; */
+    }
     .EyeItemsCard{
         width: 46%;
         height: 34rem;
     }
+    .filter-containr{
+        display: none;
+    }
+    .hjhj{
+        background-color: red;
+    }
+
  
 }
 @media screen and (max-width: 1024px) 
 {
     .EyeItemsCard{
         width: 100%;
-        height: 55rem;
+        height: 40rem;
+    }
+    .ItemDtail{
+        position: relative;
+        bottom: -15rem;
     }
  
 }
 @media screen and (max-width: 768px) {
     .EyeItemsCard{
-        height: 40rem;
+        height: 32rem;
+    }
+    .ItemDtail{
+        position: relative;
+        bottom: -7rem;
     }
  
 }
 @media screen and (max-width: 480px) {
+    .containr-1-head{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
     .EyeItemsCard{
-        height: 30rem;
+        height: 26rem;
+    }
+    .ItemDtail{
+        position: relative;
+        bottom: -0.5rem;
     }
  
     
