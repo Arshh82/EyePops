@@ -1,9 +1,18 @@
+#shimr{
+    animation-name: shimmer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
 .patext{
     width: 10rem;
     height: 2rem;
     background-color: rgb(204, 204, 204);
     border-radius: 10px;
     margin: 0.5rem;
+    animation-name: shimmer;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 .bybtn{
     position: absolute;
@@ -13,4 +22,24 @@
     background-color: rgb(204, 204, 204);
     border-style: none;
     border-radius: 15px;
+    animation-name: shimmer;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
+@keyframes shimmer{
+    0%{
+      background-color: white;
+    }
+    25%{
+        background-color:rgb(204, 204, 204);
+    }
+    50%{
+        background-color: white;
+    }
+    75%{
+        background-color:rgb(204, 204, 204);
+    }
+    100%{
+        background-color: white;
+    }
+ }
