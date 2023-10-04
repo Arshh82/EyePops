@@ -7,6 +7,10 @@ import { RiCloseLine } from "react-icons/ri";
 import { FiPlus,FiMinus } from "react-icons/fi";
 
 
+import MuiAlert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
+
 
 
 
@@ -27,11 +31,38 @@ const Cart = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [useSelector(state => state.cart)]); 
 
+
 const emptyCartMsg = <h4 className='text-red fw-6'>No items found!</h4>;
+const [oopen, setOOpen] = React.useState(false);
+const handleSuccess = () => {
+    setOOpen(true);
+  };
+
+  const handleCloose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOOpen(false);
+  };  
+
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
   return (
     <>
       <div className='cartContainer1'>
+      <div className='jh'>
+                  <Stack spacing={2} sx={{ width: '30%' }}>
+                      <Snackbar open={oopen} autoHideDuration={3000} onClose={handleCloose} >
+                          <Alert onClose={handleCloose} severity="error" sx={{ width: '100%' }}>
+                              Item Removed Sucessfully
+                          </Alert>
+                      </Snackbar>
+                  </Stack>
+          </div>
         <div className='cartItemsSection'>
          
          {data==''?
@@ -49,7 +80,7 @@ const emptyCartMsg = <h4 className='text-red fw-6'>No items found!</h4>;
              </div>
 
              <div className='cartItem-detal'>
-               <button onClick={() => dispatch(removeFromCart(product.id))} className='ItemDltbtn'><RiCloseLine /></button><br />
+               <button onClick={() => {dispatch(removeFromCart(product.id)); handleSuccess()}} className='ItemDltbtn'><RiCloseLine /></button><br />
                <div className='text-1 mt-5'>
                  <span>Name : {product.name}  00{product.id}</span><br /></div>
 

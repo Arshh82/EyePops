@@ -28,7 +28,9 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
+import MuiAlert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import Snackbar from '@mui/material/Snackbar';
 
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -97,9 +99,23 @@ const Eyeglasses = () => {
       setAge(event.target.value);
     };
     
+    
+    const [oopen, setOOpen] = React.useState(false);
+    const handleSuccess = () => {
+        setOOpen(true);
+      };
+
+      const handleCloose = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOOpen(false);
+      };  
+    
+
 
     const [qty, setQty] = useState(1);
-
 
     const dispatch = useDispatch();
     const { data: products, status } = useSelector((state) => state.product);
@@ -125,7 +141,7 @@ const Eyeglasses = () => {
       totalPrice
     }
     dispatch(addToCart(tempProduct));
-    navigate('/cart');
+    
   };
   
     // if (status === STATUSES.LOADING) {
@@ -142,10 +158,23 @@ const Eyeglasses = () => {
 
     // let ItemPoster1 = new URL ("/public/Images/EyeGlassItemPAge/poster1Eyeglass.avif",import.meta.url) 
 
+    const Alert = React.forwardRef(function Alert(props, ref) {
+        return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+      });
 
   return (
       <>
+       
           <div className='containr-1'>
+          <div className='jh'>
+                  <Stack spacing={2} sx={{ width: '30%' }}>
+                      <Snackbar open={oopen} autoHideDuration={3000} onClose={handleCloose} >
+                          <Alert onClose={handleCloose} severity="success" sx={{ width: '100%' }}>
+                              Added To Cart Sucessfully
+                          </Alert>
+                      </Snackbar>
+                  </Stack>
+          </div>
               <div className='text-container-1'>
                   <div>
                       <span className='containr-1-link'><Link to='/' style={{ textDecoration: 'none' }}><span> Home </span> </Link> <TbMathGreater /> <span> Eyeglasses </span> </span>
@@ -462,7 +491,7 @@ const Eyeglasses = () => {
                               </Select>
                           </FormControl>
                       </div>
-
+                      
                   </div>
 
                 <div className='itemPoster'>
@@ -482,7 +511,7 @@ const Eyeglasses = () => {
                                       <h5 className="mb-1 " style={{fontSize:'1.2rem'}}>{v.name}<br/><TbCurrencyRupee style={{margin:'-5 -2 -2 -2'}} />{v.price} <span className='text-muted' style={{fontSize:'medium'}}>(+GST)</span></h5>
                                       <h6 className="mb-0">Size {v.size}</h6>
                                       <span>Color</span><span>{v.color[0]==='red'?<FaCircle style={{color:'7f1a1a',margin:'2px'}} />:''}</span><span>{v.color[1]==='blue'?<FaCircle style={{color:'blue',margin:'2px'}} />:''}</span><span>{v.color[2]==='black'?<FaCircle style={{color:'black',margin:'2px'}} />:''}</span><span>{v.color[3]==='white'?<FaCircle style={{color:'white',margin:'2px',borderStyle:'groove',borderColor:'black',borderWidth:'1px',borderRadius:'10px'}} />:''}</span>
-                                      <div ><button className='buybtn'onClick={() => addToCartHandler(v)} >Add to Cart</button></div>
+                                      <div ><button className='buybtn'onClick={() => {addToCartHandler(v); handleSuccess()}} >Add to Cart</button></div>
                                   </div>
                               </div>
                                  )})}

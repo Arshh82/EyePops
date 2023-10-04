@@ -114,6 +114,14 @@
     align-items: center;
     /* background-color: pink; */
 }
+.jh{
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 60rem;
+    z-index: 109;
+
+}
 .emptbtn{
     margin-top: 1rem;
     width: 10rem;
