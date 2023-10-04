@@ -12,8 +12,6 @@ import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
 
 
-
-
 import { useDispatch, useSelector } from 'react-redux';
 import { getCartTotal, removeFromCart, toggleCartQty } from '../ReduxComponent/Reducers/cartSlice';
 import { Link } from 'react-router-dom';
@@ -32,7 +30,7 @@ const Cart = () => {
 }, [useSelector(state => state.cart)]); 
 
 
-const emptyCartMsg = <h4 className='text-red fw-6'>No items found!</h4>;
+
 const [oopen, setOOpen] = React.useState(false);
 const handleSuccess = () => {
     setOOpen(true);
@@ -54,15 +52,15 @@ const Alert = React.forwardRef(function Alert(props, ref) {
   return (
     <>
       <div className='cartContainer1'>
-      <div className='jh'>
-                  <Stack spacing={2} sx={{ width: '30%' }}>
-                      <Snackbar open={oopen} autoHideDuration={3000} onClose={handleCloose} >
-                          <Alert onClose={handleCloose} severity="error" sx={{ width: '100%' }}>
-                              Item Removed Sucessfully
-                          </Alert>
-                      </Snackbar>
-                  </Stack>
-          </div>
+        <div className='jh'>
+          <Stack spacing={2} sx={{ width: '30%' }}>
+            <Snackbar open={oopen} autoHideDuration={3000} onClose={handleCloose} >
+              <Alert onClose={handleCloose} severity="error" sx={{ width: '100%' }}>
+                Item Removed Sucessfully
+              </Alert>
+            </Snackbar>
+          </Stack>
+        </div>
         <div className='cartItemsSection'>
          
          {data==''?
@@ -155,7 +153,8 @@ const Alert = React.forwardRef(function Alert(props, ref) {
             <span>
               Shipping, Tax and Shipping Protection not included
             </span><br />
-            <button className='cartBtn'>
+
+            <button className='cartBtn' >
               <span>Proceed to checkout</span>
             </button>
           </div>

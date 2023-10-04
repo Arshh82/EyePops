@@ -93,6 +93,23 @@ ul li{
     font-weight: 700;
     color: gray;
 }
+
+.LoginSection{
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 4rem;
+    /* margin-left: 50rem; */
+    right: 8rem;
+    min-width: 15rem;
+    height: 16rem;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.671);
+    background-color: rgba(182, 182, 182, 0.212);
+ 
+
+}
+
 .eyeglass-hover-imgfrem1{
     
     position: relative;

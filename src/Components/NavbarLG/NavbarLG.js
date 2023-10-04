@@ -1,7 +1,6 @@
 import React from 'react'
 import './NavbarLG.css'
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas/';
 
 
@@ -12,7 +11,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 
 
-import { HiPlus,HiMinusSm } from "react-icons/hi";
 import { RiArrowDownSLine,RiArrowUpSLine} from "react-icons/ri";
 
 
@@ -29,11 +27,6 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 
 
 
@@ -94,7 +87,7 @@ const NavbarLG = () => {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-        <div>
+                    <div>
                           <List sx={{ width: '100%' }}
                               aria-labelledby="nested-list-subheader">
                               <ListItemButton onClick={handleClick1}>
@@ -112,7 +105,6 @@ const NavbarLG = () => {
                                               <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Men's EyeGlasses" className='mb-2' /></Link>
                                               <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Kid's EyeGlasses" className='mb-2' /></Link>
                                               <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="On sale" className='mb-2' /></Link>
-                                              
                                           </FormGroup>
                                       </ListItemButton>
                                   </List>
@@ -130,10 +122,10 @@ const NavbarLG = () => {
                                           <ListItemIcon>
                                           </ListItemIcon>
                                           <FormGroup>
-                                              <FormControlLabel control={<Checkbox />} label="Ray-Ban" />
-                                              <FormControlLabel control={<Checkbox />} label="Oakley" />
-                                              <FormControlLabel control={<Checkbox />} label="ARNETTE" />
-                                              <FormControlLabel control={<Checkbox />} label="RFLKT" />
+                                          <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Unisex Sunglasses" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Women's Sunglasses" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Men's Sunglasses" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Kid's Sunglasses" className='mb-2' /></Link>
                                           </FormGroup>
                                       </ListItemButton>
                                   </List>
@@ -151,17 +143,15 @@ const NavbarLG = () => {
                                           <ListItemIcon>
                                           </ListItemIcon>
                                           <FormGroup>
-                                              <FormControlLabel control={<Checkbox />} label="Large" />
-                                              <FormControlLabel control={<Checkbox />} label="Medium" />
-                                              <FormControlLabel control={<Checkbox />} label="Small" />
-                                              <FormControlLabel control={<Checkbox />} label="Extra Small" />
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Ray-Ban" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="Oakley" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />}  label="ARNETTE" className='mb-2' /></Link>
+                                              <Link to='/eyeglasses' onClick={(()=> setShow(false) )} id='bblack'><FormControlLabel  control={<List />} label="RFLKT" className='mb-2' /></Link>
                                           </FormGroup>
                                       </ListItemButton>
                                   </List>
                               </Collapse>
                               <hr></hr>
-                              {/* ------------------------------------------------------------------- */}
-                              
                           </List>
                       </div>
           
@@ -289,6 +279,8 @@ const NavbarLG = () => {
                 </ul>
               </div>
 
+             
+
               <div className='eyeglass-hover-imgfrem1'>
                 <img src={sunmodel1} alt='X' className='imgfrem1s d-flex w-100 h-100' />
                 <span className='frem1text'>Ray Ban Sunglasses</span>
@@ -305,6 +297,9 @@ const NavbarLG = () => {
             </div>
        
                </div>
+               <div className='LoginSection'>
+                
+                </div>
                </Link>
 
         <Link>
@@ -349,7 +344,7 @@ const NavbarLG = () => {
 
               <div className='LG-Navbar-secB'>
                   <Link to='/signin' style={{ textDecoration: 'none' }}><div className='login-butn'>Sign in <IoIosArrowDown style={{fontSize:'1.5rem'}} /></div></Link>
-                  <Link to='/favorite' className='llink' style={{ textDecoration: 'none' }}> <AiOutlineHeart className='Logo-togle' id='fav' /></Link>
+                  <Link to='' className='llink' style={{ textDecoration: 'none', marginRight:'1px' }}> <AiOutlineHeart className='Logo-togle' id='fav' /></Link>
                   <Link to='/cart' className='llink' style={{ textDecoration: 'none' }}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>{data.length}</div>
                   
               </div>
