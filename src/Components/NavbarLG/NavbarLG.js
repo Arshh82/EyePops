@@ -28,6 +28,11 @@ import Collapse from '@mui/material/Collapse';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
+import InputGroup from 'react-bootstrap/InputGroup';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+
 
 
 
@@ -297,9 +302,27 @@ const NavbarLG = () => {
             </div>
        
                </div>
-               <div className='LoginSection'>
-                
+          <div className='LoginSection'>
+            <div>
+              <form>
+                <div class="input-group search-dev">
+                  <div className='mt-3'>
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                  </div>
+                  <div className='mt-2'>
+                    <input type="password" class="form-control" placeholder="Password" aria-label="Recipient's password" aria-describedby="basic-addon2" />
+                  </div>
+                  <div className='mt-3'>
+                    <button type='submit' style={{ borderStyle: 'none', borderRadius: '5px', width: '12rem', height: '2.2rem', backgroundColor: 'blue', color: 'white', fontWeight: '500' }}>Sign in</button>
+                  </div>
                 </div>
+              </form>
+            </div>
+            <div style={{position:'absolute', bottom:'0.5rem'}}>
+              <span>Don`t have Account?<br/><b>Sign up Now</b> </span>
+            </div>
+
+          </div>
                </Link>
 
         <Link>

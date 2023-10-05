@@ -96,16 +96,17 @@ ul li{
 
 .LoginSection{
     border-radius: 0px 0px 10px 10px;
+    padding: 0rem 1.5rem 0rem 1.5rem;
     position: absolute;
     top: 4rem;
     /* margin-left: 50rem; */
     right: 8rem;
-    min-width: 15rem;
-    height: 16rem;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    width: 15.5rem;
+    height: 20rem;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(40px);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.671);
-    background-color: rgba(182, 182, 182, 0.212);
+    background-color: rgba(255, 255, 255, 0.596);
  
 
 }
