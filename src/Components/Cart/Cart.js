@@ -21,7 +21,6 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 
 let cat = new URL ("/public/Images/cat-empty-cart.png",import.meta.url)
-
 const Cart = () => {
   const dispatch = useDispatch();
   const {data,totalAmount,deliveryCharge,totalItems} = useSelector(state => state.cart);
@@ -29,14 +28,15 @@ const Cart = () => {
 
   useEffect(() => {
     dispatch(getCartTotal());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [useSelector(state => state.cart)]); 
 
-
-
 const [oopen, setOOpen] = React.useState(false);
+const [ooopen, setOOOpen] = React.useState(false);
 const handleSuccess = () => {
     setOOpen(true);
+  };
+ const handleSuccess2 = () => {
+    setOOOpen(true);
   };
 
   const handleCloose = (event, reason) => {
@@ -45,8 +45,8 @@ const handleSuccess = () => {
     }
 
     setOOpen(false);
+    setOOOpen(false);
   };  
-
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -62,6 +62,15 @@ const { isAuthenticated } = useAuth0();
             <Snackbar open={oopen} autoHideDuration={3000} onClose={handleCloose} >
               <Alert onClose={handleCloose} severity="error" sx={{ width: '100%' }}>
                 Item Removed Sucessfully
+              </Alert>
+            </Snackbar>
+          </Stack>
+        </div>
+        <div className='jh'>
+          <Stack spacing={2} sx={{ width: '30%' }}>
+            <Snackbar open={ooopen} autoHideDuration={3000} onClose={handleCloose} >
+              <Alert onClose={handleCloose} severity="error" sx={{ width: '100%' }}>
+                Please Sign in to Checkout
               </Alert>
             </Snackbar>
           </Stack>
@@ -84,8 +93,9 @@ const { isAuthenticated } = useAuth0();
 
              <div className='cartItem-detal'>
                <button onClick={() => {dispatch(removeFromCart(product.id)); handleSuccess()}} className='ItemDltbtn'><RiCloseLine /></button><br />
-               <div className='text-1 mt-5'>
-                 <span>Name : {product.name}  00{product.id}</span><br /></div>
+               <div className='text-1 mt-3'>
+                 <span>Name : {product.name}  00{product.id}</span><br />
+                 </div>
 
                <div className='text-1'>
                  <span>Quantity :</span>
@@ -163,8 +173,8 @@ const { isAuthenticated } = useAuth0();
             <button className='cartBtn' >
               <span>Proceed to checkout</span>
             </button>:
-            <button className='cartBtn' id='warn-' >
-              <span>Please Sign in to checkout</span>
+            <button className='cartBtn' id='warn-' onClick={()=> handleSuccess2()} >
+              <span>Proceed to checkout</span>
             </button>
             }
           </div>

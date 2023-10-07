@@ -27,6 +27,8 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
 
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
@@ -77,7 +79,7 @@ const NavbarLG = () => {
   const handleShow = () => setShow(true);
   const {data} = useSelector(state => state.cart);
 
-  const { loginWithRedirect,isAuthenticated,logout } = useAuth0();
+  const { loginWithRedirect,isAuthenticated,logout,user } = useAuth0();
 
 
   return (
@@ -99,7 +101,17 @@ const NavbarLG = () => {
                     <div>
                           <List sx={{ width: '100%' }}
                               aria-labelledby="nested-list-subheader">
-                              <ListItemButton onClick={handleClick1}>
+                <div>
+                  <div>
+                    <Stack direction="row" spacing={2}>
+                      <Avatar alt="Remy Sharp" src={isAuthenticated?user.picture:''} alt='X' />
+                    </Stack>
+                    <h6 className='mt-3'>{isAuthenticated?user.email:'Sign In'}</h6>
+                  </div>
+                  
+                </div>
+                <hr></hr>
+                              <ListItemButton onClick={handleClick1} className='mt-5'>
                                   <ListItemText primary="Eyeglasses" />
                                   {open1 ? <RiArrowUpSLine /> : <RiArrowDownSLine/>}
                               </ListItemButton>
@@ -160,9 +172,19 @@ const NavbarLG = () => {
                                       </ListItemButton>
                                   </List>
                               </Collapse>
+                              
+                
+              </List>
+             
+            </div>
                               <hr></hr>
-                          </List>
-                      </div>
+                              <div>
+                              {isAuthenticated ?
+                    <button className='btn btn-secondary mt-5' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Sign Out</button>
+                    : <button className='btn btn-primary' onClick={() => loginWithRedirect()}>Sign In to your Account</button>
+
+                  }
+                              </div>
           
         </Offcanvas.Body>
       </Offcanvas>

@@ -1,6 +1,6 @@
 .cartContainer1{
     width: 100%;
-    min-height: 100rem;
+    min-height: 5rem;
     max-height: auto;
     /* background-color: pink; */
     display: flex;
@@ -20,7 +20,7 @@
 }
 .cartTotalSection{
     width: 100%;
-    min-height: 100rem;
+    min-height: 60rem;
     max-height: auto;
     background-color:#ECECEC;
     
@@ -51,9 +51,9 @@
 .cartItemdiv{
     display: flex;
     flex-direction: row;
-    width: 75%;
+    width: 65%;
     margin: 2rem;
-    height: 18rem;
+    height: 16rem;
     background-color: brown;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
