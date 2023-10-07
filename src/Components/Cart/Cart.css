@@ -45,6 +45,9 @@
     border-radius: 4px;
     margin-top: 3.5rem;
 }
+#warn-{
+    background-color: grey;
+}
 .cartItemdiv{
     display: flex;
     flex-direction: row;

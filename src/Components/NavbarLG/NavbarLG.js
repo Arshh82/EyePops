@@ -33,6 +33,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 
+import { useAuth0 } from '@auth0/auth0-react';
+
 
 
 
@@ -74,6 +76,8 @@ const NavbarLG = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const {data} = useSelector(state => state.cart);
+
+  const { loginWithRedirect,isAuthenticated,logout } = useAuth0();
 
 
   return (
@@ -366,7 +370,15 @@ const NavbarLG = () => {
         </div>
 
               <div className='LG-Navbar-secB'>
-                  <Link to='/signin' style={{ textDecoration: 'none' }}><div className='login-butn'>Sign in <IoIosArrowDown style={{fontSize:'1.5rem'}} /></div></Link>
+                   {isAuthenticated ?
+                    <button className='login-butn' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                     Sign out  <IoIosArrowDown style={{ fontSize: '1.5rem' }} />
+                     </button>:
+                     <button className='login-butn' onClick={() => loginWithRedirect()}>
+                        Sign in <IoIosArrowDown style={{ fontSize: '1.5rem' }} />
+                     </button>
+                     
+                    }
                   <Link to='' className='llink' style={{ textDecoration: 'none', marginRight:'1px' }}> <AiOutlineHeart className='Logo-togle' id='fav' /></Link>
                   <Link to='/cart' className='llink' style={{ textDecoration: 'none' }}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>{data.length}</div>
                   

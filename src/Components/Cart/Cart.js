@@ -17,6 +17,9 @@ import { getCartTotal, removeFromCart, toggleCartQty } from '../ReduxComponent/R
 import { Link } from 'react-router-dom';
 
 
+import { useAuth0 } from '@auth0/auth0-react';
+
+
 let cat = new URL ("/public/Images/cat-empty-cart.png",import.meta.url)
 
 const Cart = () => {
@@ -48,6 +51,8 @@ const handleSuccess = () => {
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
+
+const { isAuthenticated } = useAuth0();
 
   return (
     <>
@@ -153,10 +158,15 @@ const Alert = React.forwardRef(function Alert(props, ref) {
             <span>
               Shipping, Tax and Shipping Protection not included
             </span><br />
-
+            
+            { isAuthenticated?
             <button className='cartBtn' >
               <span>Proceed to checkout</span>
+            </button>:
+            <button className='cartBtn' id='warn-' >
+              <span>Please Sign in to checkout</span>
             </button>
+            }
           </div>
         </div>
 
