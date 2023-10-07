@@ -306,7 +306,7 @@ const NavbarLG = () => {
             </div>
        
                </div>
-          <div className='LoginSection'>
+          {/* <div className='LoginSection'>
             <div>
               <form>
                 <div class="input-group search-dev">
@@ -326,7 +326,7 @@ const NavbarLG = () => {
               <span>Don`t have Account?<br/><b>Sign up Now</b> </span>
             </div>
 
-          </div>
+          </div> */}
                </Link>
 
         <Link>
@@ -372,10 +372,12 @@ const NavbarLG = () => {
               <div className='LG-Navbar-secB'>
                    {isAuthenticated ?
                     <button className='login-butn' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                     Sign out  <IoIosArrowDown style={{ fontSize: '1.5rem' }} />
+                     Sign out
+                       {/* <IoIosArrowDown style={{ fontSize: '1.5rem' }} /> */}
                      </button>:
                      <button className='login-butn' onClick={() => loginWithRedirect()}>
-                        Sign in <IoIosArrowDown style={{ fontSize: '1.5rem' }} />
+                        Sign in
+                         {/* <IoIosArrowDown style={{ fontSize: '1.5rem' }} /> */}
                      </button>
                      
                     }

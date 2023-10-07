@@ -94,7 +94,7 @@ ul li{
     color: gray;
 }
 
-.LoginSection{
+/* .LoginSection{
     border-radius: 0px 0px 10px 10px;
     padding: 0rem 1.5rem 0rem 1.5rem;
     position: absolute;
@@ -108,7 +108,7 @@ ul li{
     background-color: rgba(255, 255, 255, 0.596);
  
 
-}
+} */
 
 .eyeglass-hover-imgfrem1{
     
@@ -204,14 +204,14 @@ ul li{
 }
 .login-butn{
     border-style: none;
-    width: 7rem;
+    width: 5.5rem;
     height: 2.2rem;
-    margin-left: 0.8rem;
+    margin-left: 0rem;
     border-radius: 7px;
     font-size: large;
     display: flex;
     justify-content: start;
-    /* background-color: rgb(41, 22, 110) ; */
+    background-color: rgba(41, 22, 110, 0) ;
     color: rgb(41, 22, 110);
 
 }
