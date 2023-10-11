@@ -10,24 +10,26 @@
 .cartItemsSection{
     position: relative;
     width: 200rem;
-    min-height: 100rem;
+    min-height: 55rem;
     max-height: auto;
     display: flex;
     justify-content: start;
     align-items: end;
     flex-direction: column;
     background-color: white;
+    /* background-color: rgb(230, 75, 75); */
 }
 .cartTotalSection{
     width: 100%;
-    min-height: 60rem;
+    min-height: 50rem;
     max-height: auto;
+  
     background-color:#ECECEC;
     
 }
 .totalContainer{
     width: 22rem;
-    height: 60rem;
+    height: 40rem;
     margin: 5rem 2rem 2rem 4rem;
     /* background-color: red; */
 }
@@ -51,10 +53,10 @@
 .cartItemdiv{
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 80%;
     margin: 2rem;
     height: 16rem;
-    background-color: brown;
+    /* background-color: brown; */
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .cartitem-pic{
@@ -93,7 +95,7 @@
 .Item-linee{
     position: relative;
     left: 3rem;
-    width: 20rem;
+    width: 70%;
     height: 0.2px;
     background-color: rgb(199, 199, 199);
 }
@@ -134,4 +136,84 @@
     border-style: groove;
     border-width: 0;
     border-radius: 4px;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .cartContainer1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+    }
+    .emptyCartcat{
+        width: 75%;
+        height: 40rem;
+        left: -12%;
+        top: 1rem;
+    }
+    .cartItemsSection{
+        position: relative;
+        width: 100%;
+        min-height: 50rem;
+        max-height: auto;
+    }
+    .totalContainer{
+        width: 75%;
+        height: 40rem;
+        margin: 2rem 2rem 2rem 4rem;
+    }
+    .cartTotalSection{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    .cartItemdiv{
+        width: 90%;
+    }
+    
+
+
+
+}
+@media screen and (max-width: 525px) {
+    .cartItemsSection{
+        min-height: 30rem;
+        max-height: auto;
+    }
+    .emptyCartcat{
+        width: 85%;
+        height: 25rem;
+        left: -8%;
+        top: 1rem;
+    }
+    .totalContainer{
+        width: 85%;
+        height: 20rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+    .cartTotalSection{
+        min-height: 30rem;
+        max-height: auto;
+    }
+    .cartItemdiv{
+        width: 85%;
+        position: relative;
+        height: 27rem;
+        flex-direction: column;
+    }
+    .cartitem-pic{
+        position: relative;
+        top: 1rem;
+        width: 100%;
+        height: 20%;
+    }
+    .cartItem-detal{
+        position: absolute;
+        bottom: 0rem;
+        width: 100%;
+        height: 65%;
+    }
+
+
 }

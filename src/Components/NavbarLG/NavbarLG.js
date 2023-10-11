@@ -207,17 +207,17 @@ const NavbarLG = () => {
                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div  style={{ color: '#D09839' }}>Computer & Eye Glasses</div></Link>
                   </li>
                   <li>
-                    <div>Women`s Eyeglass</div>
+                  <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Women`s Eyeglass</div></Link>
                   </li>
                   <li>
-                    <div>Men`s Eyeglass</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Men`s Eyeglass</div></Link>
                   </li>
                   <li>
-                    <div>Kid`s Eyeglass</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Kid`s Eyeglass</div></Link>
                   </li>
                   
                   <li>
-                    <div style={{ color: 'red' }}>On Sale</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'red' }}>On Sale</div></Link>
                   </li>
                 </ul>
               </div>
@@ -228,19 +228,19 @@ const NavbarLG = () => {
                     <div className='style1-top'>Featured</div>
                   </li>
                   <li>
-                    <div>New Arrivals</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>New Arrivals</div></Link>
                   </li>
                   <li>
-                    <div>Ray-Ban Glasses</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Ray-Ban Glasses</div></Link>
                   </li>
                   <li>
-                    <div>2-Day Delivery</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>2-Day Delivery</div></Link>
                   </li>
                   <li>
-                    <div>Eyeglass Frames</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Eyeglass Frames</div></Link>
                   </li>
                   <li>
-                    <div>Glasses under $19</div>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Glasses under $19</div></Link>
                   </li>
                 </ul>
               </div>
@@ -273,16 +273,16 @@ const NavbarLG = () => {
                     <div className='style1-top'>Shop</div>
                   </li>
                   <li>
-                    <div>Sunglasses</div>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Sunglasses</div></Link>
                   </li>
                   <li>
-                    <div>Women's Sunglasses</div>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Women's Sunglasses</div></Link>
                   </li>
                   <li>
-                    <div>Men's Sunglasses</div>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Men's Sunglasses</div></Link>
                   </li>
                   <li>
-                    <div>Kids' Sunglasses</div>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Kids' Sunglasses</div></Link>
                   </li>
                   
                   
