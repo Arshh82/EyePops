@@ -41,7 +41,7 @@ import ProductAnimation from '../LoadingAnimations/ProductAnimation';
 import { addToCart } from '../ReduxComponent/Reducers/cartSlice';
 
 
-const Eyeglasses = () => {
+const Eyeglasses = ({progress,setProgress}) => {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -177,7 +177,7 @@ const Eyeglasses = () => {
           </div>
               <div className='text-container-1'>
                   <div>
-                      <span className='containr-1-link'><Link to='/' style={{ textDecoration: 'none' }}><span> Home </span> </Link> <TbMathGreater /> <span> Eyeglasses </span> </span>
+                      <span className='containr-1-link'><Link to='/' style={{ textDecoration: 'none' }}><span onClick={()=> { setProgress(progress+100)}}> Home </span> </Link> <TbMathGreater /> <span> Eyeglasses </span> </span>
                   </div>
                   <div>
                       <span className='containr-1-head'>Buy Prescription Eyeglasses</span>

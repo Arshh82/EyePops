@@ -47,7 +47,8 @@ let Dis3imgi = new URL ("/public/Images/Homepage/Display 3/b.avif",import.meta.u
 
 
 
-const Home = () => {
+const Home = ({progress,setProgress}) => {
+  
 
     const settings = {
       dots: false,
@@ -104,7 +105,7 @@ const Home = () => {
                 loop: true,
               }}
             /></span></h3><br/>
-          <Link to='/eyeglasses'><button className='btn btn-dark'>Shop now</button></Link>
+          <Link to='/eyeglasses'><button className='btn btn-dark' onClick={() => setProgress(progress+100)}>Shop now</button></Link>
           </div>
         </div>
 
@@ -146,8 +147,8 @@ const Home = () => {
             <h4 style={{fontWeight:'700'}} className='mt-3'>It`s always a good day to buy glasses online.</h4><br/>
             <h6 style={{fontSize:'large'}}>Express your every vision with affordable eyeglasses and prescription sunglasses.</h6>
             <h6 style={{fontSize:'large'}}>Shop thousands of glasses with Virtual Try-on Frames starting at just Rs.1000!</h6><br />
-            <Link to='/eyeglasses'><button className='mt-3 btn-cha' style={{margin:'0rem 2rem 0rem 0rem'}}>Shop Eyeglasses</button></Link>
-            <Link to='/eyeglasses'><button className='mt-3 btn-cha'>Shop Sunglasses</button></Link>
+            <Link to='/eyeglasses'><button className='mt-3 btn-cha' style={{margin:'0rem 2rem 0rem 0rem'}} onClick={() => setProgress(progress+100)}>Shop Eyeglasses</button></Link>
+            <Link to='/eyeglasses'><button className='mt-3 btn-cha' onClick={() => setProgress(progress+100)}>Shop Sunglasses</button></Link>
         </div>
 
         <div className='c-ch-b'>
@@ -202,7 +203,7 @@ const Home = () => {
           </div>
 
           <div className='ch-b-btn'>
-          <Link to='/eyeglasses'><button className='btn-cha'>Shop best Sellers</button></Link>
+          <Link to='/eyeglasses'><button className='btn-cha' onClick={() => setProgress(progress+100)}>Shop best Sellers</button></Link>
           </div>
         </div>
       </div>
@@ -218,7 +219,7 @@ const Home = () => {
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Titanium</h2>
               <p>Lightweight eyewear thats made to last.</p>
-              <button className='sec-e-btn'><Link to='/eyeglasses' style={{textDecoration:'none',color:'black'}}>Shop now</Link></button>
+              <button className='sec-e-btn'><Link to='/eyeglasses' style={{textDecoration:'none',color:'black'}} onClick={() => setProgress(progress+100)}>Shop now</Link></button>
             </div>
 
             <div className='section-d-card'>
@@ -227,7 +228,7 @@ const Home = () => {
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Glasses On Sale</h2>
               <p>Good looking out. Enjoy up to 50% off these eyewear picks!</p>
-              <button className='sec-e-btn'><Link to='/eyeglasses' style={{textDecoration:'none',color:'black'}}>Shop now</Link></button>
+              <button className='sec-e-btn'><Link to='/eyeglasses' style={{textDecoration:'none',color:'black'}} onClick={() => setProgress(progress+100)}>Shop now</Link></button>
             </div>
 
             <div className='section-d-card'>
@@ -236,7 +237,7 @@ const Home = () => {
               </div>
               <h2 className='mt-3' style={{ fontWeight: '700' }}>Fit & Style Quiz</h2>
               <p>Need some help figuring out which glasses are right for you?</p>
-              <button className='sec-e-btn'><Link to='/eyeglasses' style={{textDecoration:'none',color:'black'}}>Shop now</Link></button>
+              <button className='sec-e-btn'><Link to='/eyeglasses' style={{textDecoration:'none',color:'black'}} onClick={() => setProgress(progress+100)}>Shop now</Link></button>
             </div>
           </div>
         </div>
@@ -250,7 +251,7 @@ const Home = () => {
               <div className='e-card-text mb-2'>
                 <h1 style={{ fontSize: 'xx-large' }}>Eco Eyewear</h1>
                 <p style={{ fontSize: 'larger', fontWeight: '500' }}>Featuring thoughtful sourced materials <br /> that support a sustainable future.</p>
-                <Link to='/eyeglasses'><button className='mt-1 btn-cha ' style={{ backgroundColor: 'white', borderStyle: 'none' }}>Shop now</button></Link>
+                <Link to='/eyeglasses'><button className='mt-1 btn-cha ' style={{ backgroundColor: 'white', borderStyle: 'none' }} onClick={() => setProgress(progress+100)}>Shop now</button></Link>
               </div>
             </div>
 
@@ -261,7 +262,7 @@ const Home = () => {
               <div className='e-card-text mb-2'>
                 <h1 style={{ fontSize: 'xx-large' }}>Designer Eyeglasses Sale</h1>
                 <p style={{ fontSize: 'larger', fontWeight: '500' }}> 30 % OFF Frames with code: <br /> DBSAVINGS</p>
-                <Link to='/eyeglasses'><button className='mt-1 btn-cha ' style={{ backgroundColor: 'white', borderStyle: 'none' }}>Shop now</button></Link>
+                <Link to='/eyeglasses'><button className='mt-1 btn-cha ' style={{ backgroundColor: 'white', borderStyle: 'none' }} onClick={() => setProgress(progress+100)}>Shop now</button></Link>
               </div>
             </div>
           </div>

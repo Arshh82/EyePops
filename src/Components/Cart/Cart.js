@@ -21,6 +21,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 
 let cat = new URL ("/public/Images/cat-empty-cart.png",import.meta.url)
+
 const Cart = () => {
   const dispatch = useDispatch();
   const {data,totalAmount,deliveryCharge,totalItems} = useSelector(state => state.cart);

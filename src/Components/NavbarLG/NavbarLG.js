@@ -59,7 +59,7 @@ let brandmodel5 = new URL ("/public/Images/Hover-menu/Brand/Brand-5.avif",import
 
 
 
-const NavbarLG = () => {
+const NavbarLG = ({progress,setProgress}) => {
   const [open1, setOpen1] = React.useState(false);
   const handleClick1 = () => {
       setOpen1(!open1);
@@ -94,7 +94,7 @@ const NavbarLG = () => {
               <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-          <Link to='/' onClick={(()=> setShow(false) )}><img src={Logo} alt='X' className='d-flex w-50 ' /></Link>
+          <Link to='/' onClick={()=> {setShow(false) ; setProgress(progress+100)} }><img src={Logo} alt='X' className='d-flex w-50 ' /></Link>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -104,7 +104,7 @@ const NavbarLG = () => {
                 <div>
                   <div>
                     <Stack direction="row" spacing={2}>
-                      <Avatar alt="Remy Sharp" src={isAuthenticated?user.picture:''} alt='X' />
+                      <Avatar alt="Remy Sharp" src={isAuthenticated?user.picture:''} />
                     </Stack>
                     <h6 className='mt-3'>{isAuthenticated?user.email:'Sign In'}</h6>
                   </div>
@@ -191,7 +191,7 @@ const NavbarLG = () => {
 
               <div className='LG-Navbar-secA'>
                 <Link to='/' className='llink' style={{ textDecoration: 'none' }}> 
-                 <img src={Logo} alt='X' className='Brand-logo ' />
+                 <img src={Logo} alt='X' className='Brand-logo ' onClick={()=> { setProgress(progress+100)}} />
                 </Link>
               </div>
                <Link style={{ textDecoration: 'none' }}>
@@ -204,20 +204,20 @@ const NavbarLG = () => {
                     <div className='style1-top'>Shop</div>
                   </li>
                   <li>
-                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div  style={{ color: '#D09839' }}>Computer & Eye Glasses</div></Link>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div  style={{ color: '#D09839' }} onClick={()=> { setProgress(progress+100)}}>Computer & Eye Glasses</div></Link>
                   </li>
                   <li>
-                  <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Women`s Eyeglass</div></Link>
+                  <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Women`s Eyeglass</div></Link>
                   </li>
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Men`s Eyeglass</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Men`s Eyeglass</div></Link>
                   </li>
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Kid`s Eyeglass</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Kid`s Eyeglass</div></Link>
                   </li>
                   
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'red' }}>On Sale</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'red' }} onClick={()=> { setProgress(progress+100)}}>On Sale</div></Link>
                   </li>
                 </ul>
               </div>
@@ -228,19 +228,19 @@ const NavbarLG = () => {
                     <div className='style1-top'>Featured</div>
                   </li>
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>New Arrivals</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>New Arrivals</div></Link>
                   </li>
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Ray-Ban Glasses</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Ray-Ban Glasses</div></Link>
                   </li>
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>2-Day Delivery</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>2-Day Delivery</div></Link>
                   </li>
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Eyeglass Frames</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Eyeglass Frames</div></Link>
                   </li>
                   <li>
-                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Glasses under $19</div></Link>
+                     <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Glasses under $19</div></Link>
                   </li>
                 </ul>
               </div>
@@ -272,17 +272,17 @@ const NavbarLG = () => {
                   <li>
                     <div className='style1-top'>Shop</div>
                   </li>
-                  <li>
-                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Sunglasses</div></Link>
+                  <li  >
+                  <Link to='/eyeglasses' style={{ textDecoration: 'none' }} ><div style={{ color: 'black' }}  onClick={() => setProgress(progress+100)} >Sunglasses</div></Link>
                   </li>
                   <li>
-                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Women's Sunglasses</div></Link>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Women's Sunglasses</div></Link>
                   </li>
                   <li>
-                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Men's Sunglasses</div></Link>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Men's Sunglasses</div></Link>
                   </li>
                   <li>
-                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }}>Kids' Sunglasses</div></Link>
+                    <Link to='/eyeglasses' style={{ textDecoration: 'none' }}><div style={{ color: 'black' }} onClick={()=> { setProgress(progress+100)}}>Kids' Sunglasses</div></Link>
                   </li>
                   
                   
@@ -292,19 +292,19 @@ const NavbarLG = () => {
               <div className='menu-style1'>
                 <ul style={{ listStyle: 'none', color: 'black', fontWeight: '500' }}>
                   <li>
-                    <div className='style1-top'>Featured</div>
+                    <div className='style1-top' onClick={()=> { setProgress(progress+100)}}>Featured</div>
                   </li>
                   <li>
-                    <div>New Arrivals</div>
+                    <div onClick={()=> { setProgress(progress+100)}}>New Arrivals</div>
                   </li>
                   <li>
-                    <div>Prescription Sunglasses</div>
+                    <div onClick={()=> { setProgress(progress+100)}}>Prescription Sunglasses</div>
                   </li>
                   <li>
-                    <div>Polarized Sunglasses</div>
+                    <div onClick={()=> { setProgress(progress+100)}}>Polarized Sunglasses</div>
                   </li>
                   <li>
-                    <div style={{color:'red'}}>On Sale</div>
+                    <div style={{color:'red'}} onClick={()=> { setProgress(progress+100)}}>On Sale</div>
                   </li>
                  
                 </ul>
@@ -353,7 +353,7 @@ const NavbarLG = () => {
 
         <Link>
         <div className='Brand-sec'>
-          <span style={{margin:'2rem 1.5rem 2rem 1.5rem',fontWeight:'500'}} className='P-brand'>Premium Brands</span>
+          <span style={{margin:'2rem 1.5rem 2rem 1.5rem',fontWeight:'500'}} className='P-brand' >Premium Brands</span>
 
           <div className='eyeglass-hover-menu2'>
             <div className='eyeglass-hover-imgfrem2'>
@@ -393,18 +393,18 @@ const NavbarLG = () => {
 
               <div className='LG-Navbar-secB'>
                    {isAuthenticated ?
-                    <button className='login-butn' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                    <button className='login-butn' onClick={() => {logout({ logoutParams: { returnTo: window.location.origin } });setProgress(progress+100) } }>
                      Sign out
                        {/* <IoIosArrowDown style={{ fontSize: '1.5rem' }} /> */}
                      </button>:
-                     <button className='login-butn' onClick={() => loginWithRedirect()}>
+                     <button className='login-butn' onClick={() => {loginWithRedirect() ; setProgress(progress+100)}}>
                         Sign in
                          {/* <IoIosArrowDown style={{ fontSize: '1.5rem' }} /> */}
                      </button>
                      
                     }
                   <Link to='' className='llink' style={{ textDecoration: 'none', marginRight:'1px' }}> <AiOutlineHeart className='Logo-togle' id='fav' /></Link>
-                  <Link to='/cart' className='llink' style={{ textDecoration: 'none' }}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>{data.length}</div>
+                  <Link to='/cart' className='llink' style={{ textDecoration: 'none' }} onClick={()=> { setProgress(progress+100)}}><BsCart2 className='Logo-togle' /></Link><div className='Cart-count'>{data.length}</div>
                   
               </div>
 
