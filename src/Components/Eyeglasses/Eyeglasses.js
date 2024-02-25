@@ -119,6 +119,7 @@ const Eyeglasses = ({progress,setProgress}) => {
 
     const dispatch = useDispatch();
     const { data: products, status } = useSelector((state) => state.product);
+    console.log(products)
   
     let navigate = useNavigate();
      
