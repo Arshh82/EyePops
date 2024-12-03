@@ -62,7 +62,7 @@ const { isAuthenticated } = useAuth0();
           <Stack spacing={2} sx={{ width: '30%' }}>
             <Snackbar open={oopen} autoHideDuration={3000} onClose={handleCloose} >
               <Alert onClose={handleCloose} severity="error" sx={{ width: '100%' }}>
-                Item Removed Sucessfully
+                Product Removed
               </Alert>
             </Snackbar>
           </Stack>
@@ -71,7 +71,7 @@ const { isAuthenticated } = useAuth0();
           <Stack spacing={2} sx={{ width: '30%' }}>
             <Snackbar open={ooopen} autoHideDuration={3000} onClose={handleCloose} >
               <Alert onClose={handleCloose} severity="error" sx={{ width: '100%' }}>
-                Please Sign in to Checkout
+                Please Log in to Checkout
               </Alert>
             </Snackbar>
           </Stack>
@@ -158,7 +158,7 @@ const { isAuthenticated } = useAuth0();
 
             <p>
               <span style={{ fontWeight: '600' }}>Delivery Charges</span>
-              <span className='amt' style={{ fontWeight: '600' }}><TbCurrencyRupee className='mb-1' style={{ fontSize: '1.1rem' }} />1000</span>
+              <span className='amt' style={{ fontWeight: '600' }}><TbCurrencyRupee className='mb-1' style={{ fontSize: '1.1rem' }} />{totalAmount === 0 ? '0' : deliveryCharge}</span>
             </p>
             <hr></hr>
             <p>
